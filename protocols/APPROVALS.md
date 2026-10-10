@@ -24,4 +24,4 @@ Una aprobación solo cubre la acción descrita. Si cambian el costo, el alcance,
 
 ## Solicitar materiales al humano
 
-Pedir un archivo o dato no requiere una autorización especial, pero sí debe ser claro y justificar el uso. Ejemplo: “Para preparar los anuncios necesito fotos de frente y detalle de cada modelo. Súbelas en `items/marketing/` en JPG o PNG; el equipo de marketing las usará para comparar estilos y redactar publicaciones.”
+Pedir un archivo o dato no requiere una autorización especial, pero sí debe ser claro y justificar el uso. Ejemplo: “Para preparar los anuncios necesito fotos de frente y detalle de cada modelo. Súbelas en `[espacio-de-trabajo]/items/marketing/` en JPG o PNG; el equipo de marketing las usará para comparar estilos y redactar publicaciones.”

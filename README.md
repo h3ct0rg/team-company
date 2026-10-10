@@ -13,8 +13,7 @@ El harness (la aplicación o agente que lee estos documentos) debe abrir `CEO.md
 - `CEO.md`: punto de entrada y coordinación general.
 - `company/CHARTER.md`: reglas, autonomía, aprobaciones y límite de equipo.
 - `company/ORG_CHART.md`: puestos, reportes y registro del equipo.
-- `company/STATE.md`: idea activa, objetivos y estado del trabajo.
-- `company/MEMORY_INDEX.md`: índice de memoria.
+- `company/WORKSPACES.md`: registro de las carpetas de cada negocio.
 - `workflows/IDEA_TO_COMPANY.md`: pasos para convertir una idea en un negocio.
 - `protocols/COMMUNICATION.md`: comunicación y coordinación entre agentes.
 - `protocols/APPROVALS.md`: acciones que necesitan tu aprobación.
@@ -42,13 +41,11 @@ Los agentes pueden investigar y crear archivos dentro del proyecto. Cuando un re
 
 Antes de gastar dinero, instalar software, conectarse a correo u otros servicios, o hacer cambios al sistema, deben explicarte la acción y esperar tu aprobación.
 
-## Archivos de trabajo
+## Carpeta de tu negocio
 
-- `memory/`: decisiones, investigaciones y aprendizajes que conviene recordar.
-- `items/`: fotos, documentos y otros materiales que tú proporciones.
-- `outputs/`: entregables como documentos, páginas HTML o PDF.
+La carpeta del equipo contiene las reglas, puestos, plantillas y rutas internas de los agentes. Los datos y resultados de cada negocio se guardan aparte, en la carpeta que tú indiques. Si no indicas una, el CEO crea una carpeta en la raíz con el formato `company-{nombre-de-la-empresa}`, por ejemplo `company-nexo-inmobiliario`.
 
-Las páginas dirigidas a ti se guardan en `outputs/`. Los responsables de cada área las crean directamente usando `templates/DELIVERABLE.html` como guía; los archivos Markdown siguen guardando las reglas y memoria internas.
+Dentro de esa carpeta del negocio, el CEO crea `memory/` para decisiones e investigación, `items/` para los materiales que tú aportes y `outputs/` para los resultados y páginas HTML que los agentes te entreguen. No hace falta que prepares esas carpetas.
 
 El sistema está definido en Markdown; por sí solo no ejecuta agentes ni aplica permisos de forma técnica. El harness debe cargar y respetar estas reglas.
 
@@ -65,8 +62,7 @@ The harness (the app or agent reading these documents) should load `CEO.md` as i
 - `CEO.md`: starting point and company-wide coordination.
 - `company/CHARTER.md`: operating rules, autonomy, approvals, and team limit.
 - `company/ORG_CHART.md`: roles, reporting lines, and team roster.
-- `company/STATE.md`: active idea, goals, and current work.
-- `company/MEMORY_INDEX.md`: memory index.
+- `company/WORKSPACES.md`: registry of each business folder.
 - `workflows/IDEA_TO_COMPANY.md`: process for turning an idea into a business.
 - `protocols/COMMUNICATION.md`: communication and coordination between agents.
 - `protocols/APPROVALS.md`: actions that need your approval.
@@ -94,12 +90,10 @@ Agents may research and create files inside the project. When a result from thei
 
 Before spending money, installing software, connecting to email or other services, or changing the system, agents must explain the action and wait for your approval.
 
-## Working files
+## Your business folder
 
-- `memory/`: decisions, research, and lessons worth remembering.
-- `items/`: photos, documents, and other materials you provide.
-- `outputs/`: deliverables such as documents, web pages, or PDFs.
+The team folder contains agent rules, roles, templates, and internal routing. Business data and deliverables are stored separately, in a folder you specify. If you do not specify one, the CEO creates a folder at the project root named `company-{business-name}`, for example `company-nexo-inmobiliario`.
 
-Pages for you are saved in `outputs/`. The responsible area creates them directly, using `templates/DELIVERABLE.html` as a guide; Markdown files continue to hold the internal rules and memory.
+Inside the business folder, the CEO creates `memory/` for decisions and research, `items/` for materials you provide, and `outputs/` for deliverables and HTML pages shared by agents. You do not need to create these folders yourself.
 
 The system is defined in Markdown; by itself, it does not run agents or technically enforce permissions. The harness must load and follow these rules.

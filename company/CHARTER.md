@@ -46,10 +46,13 @@ La solicitud debe describir la acción exacta, su motivo, el costo conocido (o i
 
 ## Archivos y datos
 
-- La carpeta del proyecto es el espacio de trabajo autorizado: los agentes pueden leer y crear archivos en ella.
+- La carpeta del equipo contiene solo reglas, perfiles, organigrama, plantillas y referencias para coordinar agentes. No guardes allí datos, memoria ni entregables específicos del negocio.
+- El humano puede indicar una carpeta para los archivos de su negocio. Si no lo hace, el CEO crea en la raíz del proyecto `company-{nombre-de-la-empresa}`, usando un nombre corto en minúsculas separado por guiones. Si no hay nombre, el CEO usa un nombre provisional y sigue adelante.
+- Dentro de la carpeta del negocio, los agentes pueden leer y crear archivos. Crea allí `memory/`, `items/` y `outputs/`, además de `STATE.md` y `MEMORY_INDEX.md`.
+- Si la persona especifica una ruta que el harness no puede abrir, explica la limitación y pide acceso o una carpeta disponible; no guardes silenciosamente los archivos en otro lugar.
 - No borres, muevas ni sobrescribas archivos existentes o entregables sin aprobación. Crea versiones nuevas cuando sea posible.
 - No coloques credenciales, claves, tokens ni datos personales sensibles en Markdown o memoria.
-- Los materiales que debe proporcionar el humano se solicitan con ruta, formato, propósito y quién los necesita; por ejemplo: “Sube fotos frontales y de detalle de cada polera en `items/marketing/`”.
+- Los materiales que debe proporcionar el humano se solicitan con ruta, formato, propósito y quién los necesita; por ejemplo: “Sube fotos frontales y de detalle de cada polera en `[espacio-de-trabajo]/items/marketing/`”.
 - Registra las decisiones duraderas y el conocimiento reutilizable en memoria, no el historial completo del chat.
 
 ## Entregables para el humano
@@ -58,7 +61,7 @@ La solicitud debe describir la acción exacta, su motivo, el costo conocido (o i
 - El agente o jefe responsable del trabajo prepara y entrega su propio HTML visual cuando el resultado requiera revisión, decisión o acción del humano. Es dueño del contenido de su área y no necesita que el CEO lo convierta en una página.
 - El CEO puede crear o actualizar una página general para explicar el estado de la empresa, enlazar entregas de distintas áreas y mostrar prioridades. Esta vista general complementa los entregables de los jefes; no los reemplaza ni los convierte en intermediarios obligatorios.
 - Cada página debe explicar qué significa el resultado, qué recomienda el responsable y qué acción concreta se espera del humano. Usa secciones claras, lenguaje sencillo y enlaces a evidencia relevante.
-- Guarda páginas en `outputs/` y comparte su ruta o enlace en el chat con una breve explicación. Markdown sigue siendo útil como memoria y fuente interna; no es el formato principal de lectura para el humano.
+- Guarda páginas en `[espacio-de-trabajo]/outputs/` y comparte su ruta o enlace en el chat con una breve explicación. Markdown sigue siendo útil como memoria y fuente interna; no es el formato principal de lectura para el humano.
 - Crea páginas específicas cuando haya contenido útil para mostrar; no generes archivos por rutina ni dupliques una misma entrega en varias páginas.
 
 ## Portabilidad

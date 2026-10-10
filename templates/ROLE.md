@@ -15,7 +15,7 @@
 ## Entregables y métricas
 
 - [Entregable] — [cómo se evalúa]
-- Si el entregable requiere que el humano lo revise o ejecute: crear y compartir una página HTML sencilla en `outputs/`.
+- Si el entregable requiere que el humano lo revise o ejecute: crear y compartir una página HTML sencilla en `[espacio-de-trabajo]/outputs/`.
 
 ## Autoridad de decisión
 

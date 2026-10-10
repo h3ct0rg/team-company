@@ -2,7 +2,9 @@
 
 ## 1. Comprensión inicial
 
-Extrae de la conversación lo que se sabe: idea, cliente, problema, solución, experiencia disponible, país/región, moneda, utilidad neta deseada, fecha objetivo e inversión inicial. No conviertas campos desconocidos en datos inventados. Revisa `company/STATE.md` y la memoria.
+Extrae de la conversación lo que se sabe: idea, cliente, problema, solución, experiencia disponible, país/región, moneda, utilidad neta deseada, fecha objetivo e inversión inicial. No conviertas campos desconocidos en datos inventados. Revisa el espacio de trabajo registrado en `company/WORKSPACES.md`; consulta ahí `STATE.md` y la memoria del negocio.
+
+Antes de guardar información del negocio, resuelve su espacio de trabajo según `company/WORKSPACES.md`. Usa la carpeta que indique el humano o, si no indicó una, crea en la raíz `company-{nombre-de-la-empresa}`. Inicializa `memory/`, `items/`, `outputs/`, `STATE.md` y `MEMORY_INDEX.md` dentro de esa carpeta. Ningún dato, material o entregable específico del negocio debe guardarse en la estructura del equipo.
 
 No exijas que la persona complete un formulario para empezar. Usa primero el contexto, investiga lo que puedas y avanza con supuestos reversibles claramente identificados. Habla en lenguaje simple y explica cualquier término de negocio.
 
@@ -36,10 +38,10 @@ El jefe funcional puede contratar para su equipo dentro del máximo global de 15
 
 ## 7. Presentación y decisión
 
-Entrega al humano una explicación breve y sencilla en el chat. Si el resultado es un plan o requiere revisión, decisión o pasos humanos, el agente responsable crea su propia página HTML visual en `outputs/` y la enlaza en su mensaje. Incluye oportunidad, evidencia, competencia, misión/visión, plan inicial, meta económica y supuestos, equipo propuesto, riesgos, preguntas pendientes y acciones que requieren aprobación. No presentes una hipótesis como resultado garantizado ni obligues a leer muchos documentos internos.
+Entrega al humano una explicación breve y sencilla en el chat. Si el resultado es un plan o requiere revisión, decisión o pasos humanos, el agente responsable crea su propia página HTML visual en `[espacio-de-trabajo]/outputs/` y la enlaza en su mensaje. Incluye oportunidad, evidencia, competencia, misión/visión, plan inicial, meta económica y supuestos, equipo propuesto, riesgos, preguntas pendientes y acciones que requieren aprobación. No presentes una hipótesis como resultado garantizado ni obligues a leer muchos documentos internos.
 
 ## 8. Ejecución y revisión
 
-Ejecuta tareas autorizadas, informa avances por la jerarquía y actualiza `company/STATE.md`, organigrama, memoria y entregables. Revisa métricas frente a hitos; si la evidencia contradice el plan, informa y propone una corrección.
+Ejecuta tareas autorizadas, informa avances por la jerarquía y actualiza `[espacio-de-trabajo]/STATE.md`, la memoria y los entregables del negocio. El organigrama y el registro de agentes se mantienen en `company/ORG_CHART.md`. Revisa métricas frente a hitos; si la evidencia contradice el plan, informa y propone una corrección.
 
 Cada jefe o responsable crea y entrega el HTML de su propio trabajo si el humano debe usarlo. El CEO puede enlazar estas páginas o mantener una vista global cuando ayude a entender cómo avanza la empresa.
