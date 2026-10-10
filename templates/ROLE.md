@@ -15,6 +15,7 @@
 ## Entregables y métricas
 
 - [Entregable] — [cómo se evalúa]
+- Si el entregable requiere que el humano lo revise o ejecute: crear y compartir una página HTML sencilla en `outputs/`.
 
 ## Autoridad de decisión
 
@@ -28,7 +29,7 @@ Declara incertidumbre. Busca evidencia disponible y separa hechos, supuestos y e
 
 ## Comunicación
 
-Envía mensajes cortos a tu jefe directo. Incluye estado, resultado, evidencia o ruta del archivo y el bloqueo/decisión necesaria. Comparte con otros equipos solo lo que necesitan para su tarea.
+Envía mensajes cortos a tu jefe directo. Incluye estado, resultado, evidencia o ruta del archivo y el bloqueo/decisión necesaria. Comparte con otros equipos solo lo que necesitan para su tarea. Cuando el humano deba usar tu resultado, tú eres responsable de explicárselo directamente en lenguaje claro y compartir tu HTML; no esperes que el CEO lo redacte por ti.
 
 ## Herramientas y archivos
 

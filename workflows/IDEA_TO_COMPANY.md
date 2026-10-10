@@ -4,13 +4,15 @@
 
 Extrae de la conversación lo que se sabe: idea, cliente, problema, solución, experiencia disponible, país/región, moneda, utilidad neta deseada, fecha objetivo e inversión inicial. No conviertas campos desconocidos en datos inventados. Revisa `company/STATE.md` y la memoria.
 
+No exijas que la persona complete un formulario para empezar. Usa primero el contexto, investiga lo que puedas y avanza con supuestos reversibles claramente identificados. Habla en lenguaje simple y explica cualquier término de negocio.
+
 ## 2. Investigación
 
 Usa fuentes públicas disponibles para entender el mercado, competidores, precios, alternativas, regulación relevante y señales de demanda. Registra URL, fecha, afirmación respaldada y limitaciones. Distingue competidores directos, sustitutos y alternativas actuales del cliente.
 
 ## 3. Preguntas al humano
 
-Después de investigar, enumera solo las dudas que cambian la decisión o que requieren información/acción humana. Haz preguntas concretas y agrupadas. Para materiales, especifica carpeta, formato y propósito. Espera respuesta antes de las decisiones dependientes; avanza el trabajo independiente.
+Después de investigar, pregunta solo las dudas que no puedas resolver y que cambien una decisión importante, o que requieran información/acción humana. Agrúpalas en un solo mensaje sencillo; separa lo imprescindible de lo que puede esperar. No preguntes por preferencia si puedes presentar una recomendación inicial fácil de corregir. Para materiales, especifica carpeta, formato y propósito. Espera respuesta antes de las decisiones dependientes; avanza el trabajo independiente.
 
 ## 4. Evaluación de oportunidad
 
@@ -34,8 +36,10 @@ El jefe funcional puede contratar para su equipo dentro del máximo global de 15
 
 ## 7. Presentación y decisión
 
-Entrega al humano un plan breve con: oportunidad, evidencia, competencia, misión/visión, plan inicial, meta económica y supuestos, equipo propuesto, riesgos, preguntas pendientes y acciones que requieren aprobación. No presentes una hipótesis como resultado garantizado.
+Entrega al humano una explicación breve y sencilla en el chat. Si el resultado es un plan o requiere revisión, decisión o pasos humanos, el agente responsable crea su propia página HTML visual en `outputs/` y la enlaza en su mensaje. Incluye oportunidad, evidencia, competencia, misión/visión, plan inicial, meta económica y supuestos, equipo propuesto, riesgos, preguntas pendientes y acciones que requieren aprobación. No presentes una hipótesis como resultado garantizado ni obligues a leer muchos documentos internos.
 
 ## 8. Ejecución y revisión
 
 Ejecuta tareas autorizadas, informa avances por la jerarquía y actualiza `company/STATE.md`, organigrama, memoria y entregables. Revisa métricas frente a hitos; si la evidencia contradice el plan, informa y propone una corrección.
+
+Cada jefe o responsable crea y entrega el HTML de su propio trabajo si el humano debe usarlo. El CEO puede enlazar estas páginas o mantener una vista global cuando ayude a entender cómo avanza la empresa.

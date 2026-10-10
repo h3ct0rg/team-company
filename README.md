@@ -19,13 +19,14 @@ El harness (la aplicación o agente que lee estos documentos) debe abrir `CEO.md
 - `protocols/COMMUNICATION.md`: comunicación y coordinación entre agentes.
 - `protocols/APPROVALS.md`: acciones que necesitan tu aprobación.
 - `templates/ROLE.md`: plantilla para definir cada puesto.
+- `templates/DELIVERABLE.html`: guía visual para páginas que los agentes entregan al humano.
 
 ## Cómo empezar
 
 1. Abre este proyecto en el harness de IA que prefieras y permite que lea y cree archivos dentro de esta carpeta.
-2. Pídele que lea `CEO.md` y los documentos que este indica.
+2. Pídele que cargue `CEO.md` como instrucciones internas. El CEO consultará los demás archivos según los necesite; no hace falta que te los muestre.
 3. Cuéntale tu idea en el chat. No hace falta que tengas un plan ni que sepas de negocios.
-4. El CEO investigará lo que pueda, te hará preguntas sencillas cuando necesite información y te guiará paso a paso.
+4. El CEO investigará lo que pueda, te hará solo las preguntas que no pueda resolver y te guiará paso a paso. No necesitas leer los archivos internos para usar la empresa.
 
 ### Ejemplo para la primera conversación
 
@@ -37,13 +38,17 @@ Puedes empezar aunque todavía no sepas cuánto dinero invertir, a quién vender
 
 Cada archivo de puesto define una responsabilidad. El harness puede ejecutarla con agentes separados o con un mismo modelo, siempre respetando la jerarquía y el registro del equipo. La empresa puede tener hasta **15 agentes en total, incluido el CEO**. Los agentes pueden contratar dentro de ese límite; para superarlo deben pedirte una excepción.
 
-Los agentes pueden investigar y crear archivos dentro del proyecto. Antes de gastar dinero, instalar software, conectarse a correo u otros servicios, o hacer cambios al sistema, deben explicarte la acción y esperar tu aprobación.
+Los agentes pueden investigar y crear archivos dentro del proyecto. Cuando un resultado de su área requiera que tú lo revises o hagas algo, el responsable de esa área prepara su propia página HTML sencilla, te la comparte y te explica el siguiente paso. El CEO puede crear una vista general de la empresa, pero no es intermediario obligatorio para las entregas de los jefes.
+
+Antes de gastar dinero, instalar software, conectarse a correo u otros servicios, o hacer cambios al sistema, deben explicarte la acción y esperar tu aprobación.
 
 ## Archivos de trabajo
 
 - `memory/`: decisiones, investigaciones y aprendizajes que conviene recordar.
 - `items/`: fotos, documentos y otros materiales que tú proporciones.
 - `outputs/`: entregables como documentos, páginas HTML o PDF.
+
+Las páginas dirigidas a ti se guardan en `outputs/`. Los responsables de cada área las crean directamente usando `templates/DELIVERABLE.html` como guía; los archivos Markdown siguen guardando las reglas y memoria internas.
 
 El sistema está definido en Markdown; por sí solo no ejecuta agentes ni aplica permisos de forma técnica. El harness debe cargar y respetar estas reglas.
 
@@ -66,13 +71,14 @@ The harness (the app or agent reading these documents) should load `CEO.md` as i
 - `protocols/COMMUNICATION.md`: communication and coordination between agents.
 - `protocols/APPROVALS.md`: actions that need your approval.
 - `templates/ROLE.md`: template for defining each role.
+- `templates/DELIVERABLE.html`: visual guide for pages agents share with you.
 
 ## Getting started
 
 1. Open this project in the AI harness of your choice and allow it to read and create files in this folder.
-2. Ask it to read `CEO.md` and the documents referenced there.
+2. Ask it to load `CEO.md` as internal instructions. The CEO will consult other files as needed; it does not need to show them to you.
 3. Tell it your idea in chat. You do not need a business plan or business experience.
-4. The CEO will research what it can, ask simple questions when it needs information, and guide you step by step.
+4. The CEO will research what it can, ask only questions it cannot resolve, and guide you step by step. You do not need to read the internal files to use the company.
 
 ### First conversation example
 
@@ -84,12 +90,16 @@ You can start even if you don't yet know how much money to invest, who your cust
 
 Each role file defines a responsibility. The harness can run it using separate agents or a single model, while following the reporting structure and team roster. The company can have up to **15 agents total, including the CEO**. Managers may hire within that limit; exceeding it requires your approval.
 
-Agents may research and create files inside the project. Before spending money, installing software, connecting to email or other services, or changing the system, they must explain the action and wait for your approval.
+Agents may research and create files inside the project. When a result from their area needs your review or action, the person responsible for that area creates and shares their own simple HTML page and explains the next step. The CEO may create a company-wide overview, but is not a required intermediary for managers' deliverables.
+
+Before spending money, installing software, connecting to email or other services, or changing the system, agents must explain the action and wait for your approval.
 
 ## Working files
 
 - `memory/`: decisions, research, and lessons worth remembering.
 - `items/`: photos, documents, and other materials you provide.
 - `outputs/`: deliverables such as documents, web pages, or PDFs.
+
+Pages for you are saved in `outputs/`. The responsible area creates them directly, using `templates/DELIVERABLE.html` as a guide; Markdown files continue to hold the internal rules and memory.
 
 The system is defined in Markdown; by itself, it does not run agents or technically enforce permissions. The harness must load and follow these rules.

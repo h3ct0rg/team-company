@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Título del resultado]</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18302b;
+      --muted: #52645f;
+      --paper: #f5f7f3;
+      --card: #fff;
+      --green: #176b52;
+      --mint: #e3f2eb;
+      --line: #dce5de;
+      --amber: #805400;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.6; }
+    header { padding: 42px max(22px, calc((100% - 900px) / 2)); background: var(--green); color: white; }
+    header p { margin: 0 0 8px; opacity: .85; }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; }
+    header .intro { max-width: 720px; margin-top: 16px; font-size: 1.1rem; }
+    main { width: min(900px, calc(100% - 32px)); margin: 26px auto 54px; }
+    section, .next { margin: 16px 0; padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+    h2 { margin: 0 0 10px; font-size: 1.3rem; }
+    p { margin: 8px 0; }
+    .next { border: 0; background: var(--mint); }
+    .next h2 { color: var(--green); }
+    .tag { display: inline-block; margin: 4px 6px 4px 0; padding: 4px 10px; border-radius: 99px; background: var(--mint); color: var(--green); font-size: .9rem; }
+    .note { color: var(--muted); font-size: .95rem; }
+    .caution { color: var(--amber); }
+    a { color: var(--green); }
+    footer { padding: 18px; text-align: center; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 560px) { header { padding-top: 30px; padding-bottom: 30px; } section, .next { padding: 18px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <p>[Nombre del área o responsable] · [Fecha]</p>
+    <h1>[Título claro y útil]</h1>
+    <p class="intro">[En una o dos frases: qué se hizo y por qué le sirve al humano.]</p>
+  </header>
+
+  <main>
+    <div class="next">
+      <h2>¿Qué sigue?</h2>
+      <p>[Una acción concreta que se espera del humano. Si no necesita hacer nada, dilo.]</p>
+    </div>
+
+    <section>
+      <h2>Resumen</h2>
+      <p>[Explica el resultado en lenguaje cotidiano. Define cualquier término poco común.]</p>
+    </section>
+
+    <section>
+      <h2>Lo más importante</h2>
+      <ul>
+        <li>[Hallazgo o recomendación principal]</li>
+        <li>[Otro punto útil para decidir o actuar]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Qué sabemos y qué falta confirmar</h2>
+      <p>[Separa hechos comprobados de estimaciones o supuestos.]</p>
+      <p class="note">[Añade enlaces a fuentes cuando uses información externa. Indica si algo es una estimación.]</p>
+    </section>
+
+    <section>
+      <h2>Materiales o ayuda que necesitamos</h2>
+      <p>[Indica qué archivo, dato o decisión hace falta, en qué carpeta/formato y para qué. Si nada hace falta, elimina esta sección.]</p>
+    </section>
+  </main>
+
+  <footer>Preparado por [responsable] · Puedes responder en el chat si quieres cambiar algo o tienes preguntas.</footer>
+</body>
+</html>

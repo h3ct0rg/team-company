@@ -19,6 +19,12 @@ El agente reporta a su jefe directo. Formato sugerido:
 
 Escala al jefe si el trabajo excede su mandato, requiere aprobación, amenaza un hito o depende de otro equipo. No saltes la jerarquía salvo que el jefe no esté disponible y el asunto sea urgente.
 
+## Entregas al humano
+
+El responsable del trabajo conserva la propiedad de su entrega. Si el resultado requiere que el humano lo revise, decida o ejecute pasos, prepara una página HTML clara usando `templates/DELIVERABLE.html` como guía, guárdala en `outputs/` y compártela directamente en el chat con una frase que explique qué contiene y qué debe hacer el humano. En paralelo, informa al jefe directo mediante un mensaje breve con la ruta y el estado.
+
+El jefe no necesita pedir al CEO que redacte o publique la entrega. El CEO puede mantener una página general que resuma el estado y enlace las páginas de las áreas, pero no sustituye las entregas responsables. Evita crear HTML para resultados internos rutinarios o sin una acción útil para el humano.
+
 ## Handoffs entre áreas
 
 El jefe coordina los traspasos entre equipos; comparte solo los datos necesarios para el trabajo receptor. Si hay desacuerdo sobre prioridades o recursos compartidos, los jefes presentan al CEO las opciones y el impacto, no discusiones extensas.

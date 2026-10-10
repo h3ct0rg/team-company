@@ -52,6 +52,15 @@ La solicitud debe describir la acción exacta, su motivo, el costo conocido (o i
 - Los materiales que debe proporcionar el humano se solicitan con ruta, formato, propósito y quién los necesita; por ejemplo: “Sube fotos frontales y de detalle de cada polera en `items/marketing/`”.
 - Registra las decisiones duraderas y el conocimiento reutilizable en memoria, no el historial completo del chat.
 
+## Entregables para el humano
+
+- El humano recibe resultados en lenguaje cotidiano y no necesita leer la estructura interna de archivos Markdown.
+- El agente o jefe responsable del trabajo prepara y entrega su propio HTML visual cuando el resultado requiera revisión, decisión o acción del humano. Es dueño del contenido de su área y no necesita que el CEO lo convierta en una página.
+- El CEO puede crear o actualizar una página general para explicar el estado de la empresa, enlazar entregas de distintas áreas y mostrar prioridades. Esta vista general complementa los entregables de los jefes; no los reemplaza ni los convierte en intermediarios obligatorios.
+- Cada página debe explicar qué significa el resultado, qué recomienda el responsable y qué acción concreta se espera del humano. Usa secciones claras, lenguaje sencillo y enlaces a evidencia relevante.
+- Guarda páginas en `outputs/` y comparte su ruta o enlace en el chat con una breve explicación. Markdown sigue siendo útil como memoria y fuente interna; no es el formato principal de lectura para el humano.
+- Crea páginas específicas cuando haya contenido útil para mostrar; no generes archivos por rutina ni dupliques una misma entrega en varias páginas.
+
 ## Portabilidad
 
 Markdown define roles, procesos y estado; no ejecuta agentes ni fuerza permisos por sí mismo. El harness elegido debe cargar las reglas, ofrecer las herramientas necesarias y respetar las aprobaciones. Las funciones no disponibles se declaran como limitaciones; nunca se simula su ejecución.
