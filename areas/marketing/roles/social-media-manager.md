@@ -1,6 +1,6 @@
 # Social media manager — Marketing
 
-**Catálogo:** `areas/marketing/roles/social-media-manager.md` · **Reporta a:** Jefe de Marketing · **Tareas:** `negocio/tareas/marketing-social-media-manager.md`
+**Catálogo:** `areas/marketing/roles/social-media-manager.md` · **Reporta a:** Jefe de Marketing · **Tareas:** `[empresa]/tareas/marketing-social-media-manager.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -36,4 +36,4 @@ Cuando las redes sociales son un canal principal de venta o de comunicación.
 
 ## Materiales que puede pedir al humano
 
-- Fotos y videos en `negocio/items/marketing/`, con una breve descripción de cada uno.
+- Fotos y videos en `[empresa]/items/marketing/`, con una breve descripción de cada uno.

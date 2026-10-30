@@ -1,6 +1,6 @@
 # Seguridad de datos — Tecnología
 
-**Catálogo:** `areas/tecnologia/roles/seguridad-datos.md` · **Reporta a:** Jefe de Tecnología · **Tareas:** `negocio/tareas/tecnologia-seguridad-datos.md`
+**Catálogo:** `areas/tecnologia/roles/seguridad-datos.md` · **Reporta a:** Jefe de Tecnología · **Tareas:** `[empresa]/tareas/tecnologia-seguridad-datos.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -34,4 +34,4 @@ Cuando se manejan datos de clientes, pagos o accesos compartidos con otras perso
 
 ## Materiales que puede pedir al humano
 
-- Lista de cuentas del negocio (sin contraseñas) y quién accede, en `negocio/items/tecnologia/`.
+- Lista de cuentas del negocio (sin contraseñas) y quién accede, en `[empresa]/items/tecnologia/`.

@@ -1,6 +1,6 @@
 # Jefe de Finanzas y Contabilidad — Finanzas
 
-**Catálogo:** `areas/finanzas/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/finanzas-jefe.md`
+**Catálogo:** `areas/finanzas/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/finanzas-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -16,7 +16,7 @@ Desde la investigación, cuando haya que estimar precio, costos o inversión. Im
 
 - Modelo económico simple: precio, costo por unidad, margen, gastos fijos y punto de equilibrio.
 - Proyección de caja de 3 a 6 meses con escenarios pesimista, base y optimista.
-- Mantener `negocio/METRICS.csv` con los datos financieros de cada semana.
+- Mantener `[empresa]/METRICS.csv` con los datos financieros de cada semana.
 - Revisar que los gastos propuestos por otras áreas tengan retorno esperado antes de pedir aprobación.
 - Alertar al CEO si la caja proyectada cae bajo el mínimo acordado.
 
@@ -38,7 +38,7 @@ Desde la investigación, cuando haya que estimar precio, costos o inversión. Im
 
 ## Materiales que puede pedir al humano
 
-- Inversión disponible, costos conocidos y comprobantes en `negocio/items/finanzas/` (PDF, foto o planilla).
+- Inversión disponible, costos conocidos y comprobantes en `[empresa]/items/finanzas/` (PDF, foto o planilla).
 
 ## Equipo del área
 

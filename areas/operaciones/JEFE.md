@@ -1,6 +1,6 @@
 # Jefe de Operaciones y Logística — Operaciones
 
-**Catálogo:** `areas/operaciones/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/operaciones-jefe.md`
+**Catálogo:** `areas/operaciones/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/operaciones-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -36,7 +36,7 @@ En lanzamiento, cuando hay que producir, preparar pedidos, despachar o prestar e
 
 ## Materiales que puede pedir al humano
 
-- Fotos del espacio de trabajo, tiempos reales de preparación y costos de envío en `negocio/items/operaciones/`.
+- Fotos del espacio de trabajo, tiempos reales de preparación y costos de envío en `[empresa]/items/operaciones/`.
 
 ## Equipo del área
 

@@ -1,6 +1,6 @@
 # Analista financiero — Finanzas
 
-**Catálogo:** `areas/finanzas/roles/analista-financiero.md` · **Reporta a:** Jefe de Finanzas · **Tareas:** `negocio/tareas/finanzas-analista-financiero.md`
+**Catálogo:** `areas/finanzas/roles/analista-financiero.md` · **Reporta a:** Jefe de Finanzas · **Tareas:** `[empresa]/tareas/finanzas-analista-financiero.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando hay varios productos o canales, o las proyecciones deben actualizarse cad
 
 ## Materiales que puede pedir al humano
 
-- Cotizaciones y facturas de proveedores en `negocio/items/finanzas/`.
+- Cotizaciones y facturas de proveedores en `[empresa]/items/finanzas/`.

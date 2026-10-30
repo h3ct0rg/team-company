@@ -1,6 +1,6 @@
 # Publicidad pagada — Marketing
 
-**Catálogo:** `areas/marketing/roles/publicidad-pagada.md` · **Reporta a:** Jefe de Marketing · **Tareas:** `negocio/tareas/marketing-publicidad-pagada.md`
+**Catálogo:** `areas/marketing/roles/publicidad-pagada.md` · **Reporta a:** Jefe de Marketing · **Tareas:** `[empresa]/tareas/marketing-publicidad-pagada.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 

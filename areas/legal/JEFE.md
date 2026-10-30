@@ -1,6 +1,6 @@
 # Jefe de Legal y Cumplimiento — Legal
 
-**Catálogo:** `areas/legal/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/legal-jefe.md`
+**Catálogo:** `areas/legal/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/legal-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,7 +35,7 @@ Antes de vender o cobrar, o antes si el rubro requiere permisos (alimentos, salu
 
 ## Materiales que puede pedir al humano
 
-- País, ciudad, rubro exacto y documentos recibidos de organismos en `negocio/items/legal/`.
+- País, ciudad, rubro exacto y documentos recibidos de organismos en `[empresa]/items/legal/`.
 
 ## Equipo del área
 

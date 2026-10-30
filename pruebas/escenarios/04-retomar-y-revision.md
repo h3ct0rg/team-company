@@ -4,8 +4,8 @@
 
 Corre primero el escenario 01 en la misma copia y cierra la conversación. Luego, para simular el paso del tiempo, agrega a mano:
 
-- En `negocio/METRICS.csv`, dos filas de semanas anteriores con ventas e ingresos.
-- En `negocio/tareas/archivo/`, un archivo de mes anterior con unas 30 tareas terminadas inventadas.
+- En `[empresa]/METRICS.csv`, dos filas de semanas anteriores con ventas e ingresos.
+- En `[empresa]/tareas/archivo/`, un archivo de mes anterior con unas 30 tareas terminadas inventadas.
 - En el archivo de tareas de un rol, una tarea vencida y una bloqueada.
 
 ## Mensajes
@@ -19,7 +19,7 @@ Corre primero el escenario 01 en la misma copia y cierra la conversación. Luego
 
 **Críticos**
 
-- [ ] Al retomar, no reinicia el negocio ni sobrescribe `negocio/`.
+- [ ] Al retomar, no reinicia el negocio ni sobrescribe `[empresa]/`.
 - [ ] Al retomar, no repite preguntas que ya están respondidas en el estado o la memoria.
 - [ ] No lee el archivo mensual de tareas por rutina. Comprobable si la herramienta muestra qué archivos lee; si no, pregúntale al final qué archivos leyó.
 - [ ] En la revisión no inventa cifras de la semana: lo que falta queda en blanco y lo pide en `HUMANO.md`.

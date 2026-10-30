@@ -1,6 +1,6 @@
 # Inventario — Compras
 
-**Catálogo:** `areas/compras/roles/inventario.md` · **Reporta a:** Jefe de Compras · **Tareas:** `negocio/tareas/compras-inventario.md`
+**Catálogo:** `areas/compras/roles/inventario.md` · **Reporta a:** Jefe de Compras · **Tareas:** `[empresa]/tareas/compras-inventario.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando hay stock físico que controlar.
 
 ## Materiales que puede pedir al humano
 
-- Conteo físico del stock en `negocio/items/compras/` (planilla o foto).
+- Conteo físico del stock en `[empresa]/items/compras/` (planilla o foto).

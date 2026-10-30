@@ -1,6 +1,6 @@
 # Diseñador gráfico — Marca y diseño
 
-**Catálogo:** `areas/marca-diseno/roles/disenador-grafico.md` · **Reporta a:** Jefe de Marca y Diseño · **Tareas:** `negocio/tareas/marca-diseno-disenador-grafico.md`
+**Catálogo:** `areas/marca-diseno/roles/disenador-grafico.md` · **Reporta a:** Jefe de Marca y Diseño · **Tareas:** `[empresa]/tareas/marca-diseno-disenador-grafico.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -20,7 +20,7 @@ Cuando hacen falta piezas visuales frecuentes.
 
 ## Entregables y métricas
 
-- Piezas en `negocio/outputs/diseno/` con su uso explicado — coherentes con la guía.
+- Piezas en `[empresa]/outputs/archivos/diseno/` con su uso explicado — coherentes con la guía.
 
 ## Autoridad de decisión
 
@@ -33,4 +33,4 @@ Cuando hacen falta piezas visuales frecuentes.
 
 ## Materiales que puede pedir al humano
 
-- Fotos de producto y logos existentes en `negocio/items/marca/`.
+- Fotos de producto y logos existentes en `[empresa]/items/marca/`.

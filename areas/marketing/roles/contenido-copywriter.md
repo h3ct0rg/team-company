@@ -1,6 +1,6 @@
 # Contenido y copywriting — Marketing
 
-**Catálogo:** `areas/marketing/roles/contenido-copywriter.md` · **Reporta a:** Jefe de Marketing · **Tareas:** `negocio/tareas/marketing-contenido-copywriter.md`
+**Catálogo:** `areas/marketing/roles/contenido-copywriter.md` · **Reporta a:** Jefe de Marketing · **Tareas:** `[empresa]/tareas/marketing-contenido-copywriter.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando se necesita contenido frecuente: web, fichas, correos, guiones de video o
 
 ## Materiales que puede pedir al humano
 
-- Historia del negocio, testimonios reales y detalles del producto en `negocio/items/marketing/`.
+- Historia del negocio, testimonios reales y detalles del producto en `[empresa]/items/marketing/`.

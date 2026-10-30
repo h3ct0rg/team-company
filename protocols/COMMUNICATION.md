@@ -22,9 +22,9 @@ Escala al jefe si el trabajo excede su mandato, requiere aprobación, amenaza un
 
 ## Entregas al humano
 
-El responsable del trabajo conserva la propiedad de su entrega. Si el resultado requiere que el humano lo revise, decida o ejecute pasos, prepara una página HTML clara usando `templates/DELIVERABLE.html` como guía, la guarda en `negocio/outputs/` y la comparte directamente en el chat con una frase que explique qué contiene y qué debe hacer el humano. Lo que el humano deba hacer se registra en `negocio/tareas/HUMANO.md`. En paralelo, informa al jefe directo con la ruta y el estado.
+El responsable del trabajo conserva la propiedad de su entrega. Si el resultado requiere que el humano lo revise, decida o ejecute pasos, prepara una página siguiendo `protocols/WEB.md` (plantilla `templates/PAGINA.html`, guardada en `[empresa]/outputs/` y registrada en `assets/paginas.js`) y la comparte directamente en el chat con una frase que explique qué contiene y qué debe hacer el humano. Lo que el humano deba hacer se registra en `[empresa]/tareas/HUMANO.md`. En paralelo, informa al jefe directo con la ruta y el estado.
 
-El CEO enlaza la entrega desde el panel `negocio/outputs/index.html`; no la reescribe. Evita crear HTML para resultados internos rutinarios o sin una acción útil para el humano.
+Al estar registrada, la entrega aparece sola en el menú de navegación y en la página principal `[empresa]/outputs/main.html`; el CEO no la reescribe. Evita crear HTML para resultados internos rutinarios o sin una acción útil para el humano.
 
 ## Handoffs entre áreas
 

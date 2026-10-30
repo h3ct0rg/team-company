@@ -1,5 +1,5 @@
-// Datos del organigrama que dibuja el panel. Se guarda como negocio/outputs/equipo.js,
-// junto a index.html. Lo genera el CEO según protocols/TASKS.md («Organigrama del panel»).
+// Datos del organigrama de main.html. Se guarda como [empresa]/outputs/assets/equipo.js.
+// Lo genera el CEO según protocols/TASKS.md («Organigrama del panel»).
 // El panel muestra todo lo que contiene este archivo: no pongas datos sensibles.
 //
 // Campos de cada agente:

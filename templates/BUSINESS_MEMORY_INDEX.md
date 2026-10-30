@@ -1,6 +1,6 @@
 # Índice de memoria del negocio
 
-Este índice vive en `negocio/MEMORY_INDEX.md`. Guarda la información detallada en `negocio/memory/` y recupera solo lo necesario para cada tarea: lee este índice primero y abre solo el archivo que necesitas.
+Este índice vive en `[empresa]/MEMORY_INDEX.md`. Guarda la información detallada en `[empresa]/memory/` y recupera solo lo necesario para cada tarea: lee este índice primero y abre solo el archivo que necesitas.
 
 ## Reglas
 

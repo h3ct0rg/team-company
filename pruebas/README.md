@@ -4,9 +4,9 @@ Escenarios para comprobar que el equipo se comporta como dicen las reglas, con c
 
 ## Cómo correr una prueba
 
-1. **Usa siempre una copia limpia y desechable del repositorio**, nunca la copia de un negocio real. Las pruebas crean `negocio/` y modifican el organigrama.
+1. **Usa siempre una copia limpia y desechable**, nunca la de una empresa real: crea una carpeta contenedora de prueba (por ejemplo, `prueba-01/`) y pon dentro una copia de `team-company/`. La prueba creará al lado una carpeta `company-{nombre}/` y modificará el organigrama de la copia. Al terminar, borra la carpeta contenedora completa.
 2. Si el escenario tiene una sección **Preparación**, realízala antes de empezar.
-3. Abre la copia con la herramienta de IA que quieras probar y envía el **mensaje** del escenario tal cual, empezando con `@CEO.md`.
+3. Abre **la carpeta contenedora** con la herramienta de IA que quieras probar y envía el **mensaje** del escenario tal cual, empezando con `@team-company/CEO.md` (en los escenarios aparece abreviado como `@CEO.md`).
 4. Si el CEO hace preguntas, responde con los datos de **Respuestas del humano**. Si pregunta algo que no está ahí, responde «no lo sé, recomiéndame tú».
 5. Al terminar, revisa la **lista de verificación**: cada punto se cumple o no.
 6. Registra el resultado en `pruebas/resultados/AAAA-MM-DD-{herramienta}-{escenario}.md` en este repositorio del framework: herramienta, modelo, puntos fallidos y observaciones.
@@ -15,7 +15,7 @@ Una prueba se aprueba si cumple todos los puntos marcados como **crítico** y al
 
 ## Panel de ejemplo
 
-`demo-panel/` contiene el panel con un equipo ficticio, para ver cómo se ve el organigrama. Ábrelo con doble clic en `demo-panel/index.html`. Si cambias `templates/PANEL.html`, vuelve a copiarlo como `demo-panel/index.html`.
+`demo-web/` es una copia de `templates/web/` con una empresa ficticia: página principal, dos páginas de área, menú de navegación y organigrama. Ábrelo con doble clic en `demo-web/main.html`. Si cambias algo en `templates/web/assets/`, vuelve a copiar `estilo.css`, `navegacion.js` y `organigrama.js` a `demo-web/assets/`.
 
 ## Escenarios
 

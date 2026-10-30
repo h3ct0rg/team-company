@@ -1,6 +1,6 @@
 # Gestión de producto — Producto
 
-**Catálogo:** `areas/producto/roles/gestion-producto.md` · **Reporta a:** Jefe de Producto · **Tareas:** `negocio/tareas/producto-gestion-producto.md`
+**Catálogo:** `areas/producto/roles/gestion-producto.md` · **Reporta a:** Jefe de Producto · **Tareas:** `[empresa]/tareas/producto-gestion-producto.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -34,4 +34,4 @@ Cuando hay varios productos, versiones o mejoras que priorizar, o cuando Desarro
 
 ## Materiales que puede pedir al humano
 
-- Ideas, bocetos o ejemplos de productos de referencia en `negocio/items/producto/`.
+- Ideas, bocetos o ejemplos de productos de referencia en `[empresa]/items/producto/`.

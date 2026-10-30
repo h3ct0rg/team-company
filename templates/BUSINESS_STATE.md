@@ -35,4 +35,4 @@ Resumen breve para retomar el trabajo. Máximo unas 60 líneas: lo detallado va 
 
 ## Entregables principales
 
-Panel: `outputs/index.html`. Enlaza aquí solo las páginas clave; no copies informes completos.
+Página principal: `outputs/main.html`. Enlaza aquí solo las páginas clave; no copies informes completos.

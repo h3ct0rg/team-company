@@ -1,6 +1,6 @@
 # Procesos y calidad — Operaciones
 
-**Catálogo:** `areas/operaciones/roles/procesos-calidad.md` · **Reporta a:** Jefe de Operaciones · **Tareas:** `negocio/tareas/operaciones-procesos-calidad.md`
+**Catálogo:** `areas/operaciones/roles/procesos-calidad.md` · **Reporta a:** Jefe de Operaciones · **Tareas:** `[empresa]/tareas/operaciones-procesos-calidad.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -34,4 +34,4 @@ Cuando hay errores repetidos o el volumen hace necesario estandarizar.
 
 ## Materiales que puede pedir al humano
 
-- Fotos de productos defectuosos o descripción de errores en `negocio/items/operaciones/`.
+- Fotos de productos defectuosos o descripción de errores en `[empresa]/items/operaciones/`.

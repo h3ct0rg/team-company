@@ -1,6 +1,6 @@
 # Tareas abiertas — [puesto]
 
-Solo tareas abiertas. Al terminar o descartar una tarea, muévela a `negocio/tareas/archivo/AAAA-MM.md` y actualiza tu fila en `RESUMEN.md`. Formato y reglas: `protocols/TASKS.md`.
+Solo tareas abiertas. Al terminar o descartar una tarea, muévela a `[empresa]/tareas/archivo/AAAA-MM.md` y actualiza tu fila en `RESUMEN.md`. Formato y reglas: `protocols/TASKS.md`.
 
 Estados: `[ ]` pendiente · `[~]` en curso · `[!]` bloqueada
 

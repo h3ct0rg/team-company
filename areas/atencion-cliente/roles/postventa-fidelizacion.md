@@ -1,6 +1,6 @@
 # Postventa y fidelización — Atención al cliente
 
-**Catálogo:** `areas/atencion-cliente/roles/postventa-fidelizacion.md` · **Reporta a:** Jefe de Atención al Cliente · **Tareas:** `negocio/tareas/atencion-cliente-postventa-fidelizacion.md`
+**Catálogo:** `areas/atencion-cliente/roles/postventa-fidelizacion.md` · **Reporta a:** Jefe de Atención al Cliente · **Tareas:** `[empresa]/tareas/atencion-cliente-postventa-fidelizacion.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando hay una base de clientes que puede volver a comprar o recomendar.
 
 ## Materiales que puede pedir al humano
 
-- Lista de clientes que aceptaron recibir mensajes, en `negocio/items/ventas/`.
+- Lista de clientes que aceptaron recibir mensajes, en `[empresa]/items/ventas/`.

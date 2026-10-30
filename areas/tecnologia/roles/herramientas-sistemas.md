@@ -1,6 +1,6 @@
 # Herramientas y sistemas — Tecnología
 
-**Catálogo:** `areas/tecnologia/roles/herramientas-sistemas.md` · **Reporta a:** Jefe de Tecnología · **Tareas:** `negocio/tareas/tecnologia-herramientas-sistemas.md`
+**Catálogo:** `areas/tecnologia/roles/herramientas-sistemas.md` · **Reporta a:** Jefe de Tecnología · **Tareas:** `[empresa]/tareas/tecnologia-herramientas-sistemas.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -34,4 +34,4 @@ Cuando hay varias herramientas que elegir, configurar o integrar.
 
 ## Materiales que puede pedir al humano
 
-- Capturas de pantalla sin contraseñas en `negocio/items/tecnologia/`.
+- Capturas de pantalla sin contraseñas en `[empresa]/items/tecnologia/`.

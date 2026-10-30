@@ -6,14 +6,22 @@
 
 Este proyecto define una empresa operada por agentes de IA mediante archivos Markdown. Ayuda a cualquier persona, sin experiencia técnica ni de negocios, a convertir una idea en una micro o pequeña empresa que genere ingresos. Funciona con cualquier modelo o herramienta de IA que pueda leer y crear archivos, sin depender de un proveedor concreto.
 
-**Un repositorio = un negocio.** Para empezar otro negocio, usa una copia limpia de este repositorio.
+**Una carpeta de agentes = una empresa.** Los agentes viven en `team-company/` y todo lo de tu empresa se crea aparte, en una carpeta hermana `company-{nombre}/`:
+
+```text
+mis-empresas/
+├── team-company/              los agentes (este repositorio)
+└── company-poleras-del-sur/   tu empresa: páginas, planillas, PDF, tareas, memoria
+```
+
+Para empezar otra empresa, usa una copia limpia de `team-company/`.
 
 ## Cómo empezar
 
-1. Haz una copia limpia de este repositorio para tu negocio.
-2. Ábrela en la herramienta de IA que prefieras y permite que lea y cree archivos dentro de la carpeta.
-3. Escribe `@CEO.md` (o pídele que cargue `CEO.md` como instrucciones) y cuéntale tu idea. No hace falta que tengas un plan ni que sepas de negocios.
-4. El CEO investigará, te hará solo las preguntas imprescindibles, armará el equipo mínimo y te mostrará un panel con lo que te toca hacer.
+1. Crea una carpeta contenedora (por ejemplo, `mis-empresas/`) y pon dentro una copia limpia de este repositorio.
+2. Abre **la carpeta contenedora** en la herramienta de IA que prefieras, para que pueda leer `team-company/` y crear la carpeta de tu empresa al lado. Si solo abres `team-company/`, el CEO te pedirá acceso a la carpeta contenedora.
+3. Escribe `@team-company/CEO.md` (o pídele que cargue ese archivo como instrucciones) y cuéntale tu idea. No hace falta que tengas un plan ni que sepas de negocios.
+4. El CEO investigará, te hará solo las preguntas imprescindibles, armará el equipo mínimo y te dará el enlace a la página principal de tu empresa.
 
 ### Ejemplo para la primera conversación
 
@@ -33,9 +41,11 @@ Si tu herramienta permite programar tareas, el CEO te ofrecerá ejecutar la revi
 
 ## Tu negocio
 
-Todo lo de tu negocio queda en la carpeta `negocio/`, que el CEO crea al comenzar:
+Todo lo de tu negocio queda en la carpeta `company-{nombre}/`, que el CEO crea al comenzar:
 
-- `outputs/index.html`: **tu panel**. Ahí ves la etapa, lo que te toca hacer, los números, las entregas de cada área y el **organigrama de tu equipo**: al pasar el mouse o tocar un agente ves qué hace y en qué está.
+- `outputs/main.html`: **tu página principal**. Ahí ves la etapa, lo que te toca hacer, los números, todas las entregas del equipo y el **organigrama**: al pasar el mouse o tocar un agente ves qué hace y en qué está.
+- Todas las páginas tienen el mismo diseño y una **barra de navegación** arriba, con «Inicio» y un menú «Páginas» que se actualiza solo cuando el equipo crea o actualiza una página.
+- `outputs/archivos/`: planillas, PDF y otros archivos que te prepare el equipo.
 - `items/`: donde subes los materiales que te pidan (fotos, documentos, planillas). Los agentes nunca modifican lo que subes.
 - El resto (estado, memoria, tareas y métricas) lo mantienen los agentes. No necesitas leerlo.
 
@@ -53,9 +63,9 @@ Todo lo de tu negocio queda en la carpeta `negocio/`, que el CEO crea al comenza
 - `company/`: constitución (`CHARTER.md`) y organigrama (`ORG_CHART.md`).
 - `areas/`: catálogo de áreas y roles, con reglas comunes en `areas/README.md`.
 - `comandos/`: comandos disponibles.
-- `protocols/`: aprobaciones, comunicación, y tareas y métricas.
+- `protocols/`: aprobaciones, comunicación, tareas y métricas, y páginas web (`WEB.md`).
 - `workflows/`: flujo de idea a empresa.
-- `templates/`: plantillas de estado, memoria, tareas, métricas, roles, entregas y panel.
+- `templates/`: plantillas de estado, memoria, tareas, métricas y roles; `templates/web/` es el kit que se copia a la empresa (página principal, estilo, navegación y organigrama) y `templates/PAGINA.html` es la plantilla de cada página nueva.
 - `pruebas/`: escenarios para comprobar que el sistema funciona con cualquier herramienta.
 
 El sistema está definido en Markdown; por sí solo no ejecuta agentes ni aplica permisos de forma técnica. La herramienta de IA debe cargar y respetar estas reglas.
@@ -66,14 +76,14 @@ El sistema está definido en Markdown; por sí solo no ejecuta agentes ni aplica
 
 This project describes an AI-run company using Markdown files. It helps anyone, with no technical or business experience, turn an idea into a micro or small business that generates revenue. It works with any AI model or tool that can read and create files, without depending on a specific provider.
 
-**One repository = one business.** To start another business, use a clean copy of this repository.
+**One agent folder = one company.** The agents live in `team-company/`, and everything about your company is created separately in a sibling folder, `company-{name}/`. To start another company, use a clean copy of `team-company/`.
 
 ## Getting started
 
-1. Make a clean copy of this repository for your business.
-2. Open it in the AI tool of your choice and allow it to read and create files in the folder.
-3. Type `@CEO.md` (or ask it to load `CEO.md` as instructions) and describe your idea. You do not need a plan or business experience.
-4. The CEO will research, ask only essential questions, set up the minimum team, and show you a dashboard with your next steps.
+1. Create a parent folder (for example, `my-companies/`) and put a clean copy of this repository inside it.
+2. Open **the parent folder** in the AI tool of your choice so it can read `team-company/` and create your company folder next to it. If you open only `team-company/`, the CEO will ask for access to the parent folder.
+3. Type `@team-company/CEO.md` (or ask it to load that file as instructions) and describe your idea. You do not need a plan or business experience.
+4. The CEO will research, ask only essential questions, set up the minimum team, and give you the link to your company's main page.
 
 ## Commands
 
@@ -89,9 +99,11 @@ If your tool supports scheduled tasks, the CEO will offer to run the weekly revi
 
 ## Your business
 
-Everything about your business lives in the `negocio/` folder, which the CEO creates at the start:
+Everything about your business lives in the `company-{name}/` folder, which the CEO creates at the start:
 
-- `outputs/index.html`: **your dashboard** with the stage, your to-dos, key numbers, each area's deliverables, and your **team's org chart**: hover over or tap an agent to see what it does and what it is working on.
+- `outputs/main.html`: **your main page** with the stage, your to-dos, key numbers, all team deliverables, and the **org chart**: hover over or tap an agent to see what it does and what it is working on.
+- Every page shares the same design and a **navigation bar** with «Inicio» and a «Páginas» menu that updates itself whenever the team creates or updates a page.
+- `outputs/archivos/`: spreadsheets, PDFs, and other files prepared by the team.
 - `items/`: where you upload requested materials. Agents never modify what you upload.
 - Everything else (state, memory, tasks, metrics) is maintained by the agents.
 

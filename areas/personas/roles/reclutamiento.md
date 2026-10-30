@@ -1,6 +1,6 @@
 # Reclutamiento — Personas
 
-**Catálogo:** `areas/personas/roles/reclutamiento.md` · **Reporta a:** Jefe de Personas · **Tareas:** `negocio/tareas/personas-reclutamiento.md`
+**Catálogo:** `areas/personas/roles/reclutamiento.md` · **Reporta a:** Jefe de Personas · **Tareas:** `[empresa]/tareas/personas-reclutamiento.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando hay procesos de selección en curso.
 
 ## Materiales que puede pedir al humano
 
-- Currículums recibidos en `negocio/items/personas/`.
+- Currículums recibidos en `[empresa]/items/personas/`.

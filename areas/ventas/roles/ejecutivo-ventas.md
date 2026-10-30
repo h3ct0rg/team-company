@@ -1,6 +1,6 @@
 # Ejecutivo de ventas — Ventas
 
-**Catálogo:** `areas/ventas/roles/ejecutivo-ventas.md` · **Reporta a:** Jefe de Ventas · **Tareas:** `negocio/tareas/ventas-ejecutivo-ventas.md`
+**Catálogo:** `areas/ventas/roles/ejecutivo-ventas.md` · **Reporta a:** Jefe de Ventas · **Tareas:** `[empresa]/tareas/ventas-ejecutivo-ventas.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando hay venta a empresas, servicios con cotización o seguimiento personaliza
 
 ## Materiales que puede pedir al humano
 
-- Contactos propios y respuestas recibidas en `negocio/items/ventas/`.
+- Contactos propios y respuestas recibidas en `[empresa]/items/ventas/`.

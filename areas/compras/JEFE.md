@@ -1,6 +1,6 @@
 # Jefe de Compras y Proveedores — Compras
 
-**Catálogo:** `areas/compras/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/compras-jefe.md`
+**Catálogo:** `areas/compras/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/compras-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -36,7 +36,7 @@ En investigación, para conocer costos reales de insumos o productos. Imprescind
 
 ## Materiales que puede pedir al humano
 
-- Cotizaciones recibidas y muestras (fotos) en `negocio/items/compras/`.
+- Cotizaciones recibidas y muestras (fotos) en `[empresa]/items/compras/`.
 
 ## Equipo del área
 

@@ -1,6 +1,6 @@
 # Ventas online — Ventas
 
-**Catálogo:** `areas/ventas/roles/ventas-online.md` · **Reporta a:** Jefe de Ventas · **Tareas:** `negocio/tareas/ventas-ventas-online.md`
+**Catálogo:** `areas/ventas/roles/ventas-online.md` · **Reporta a:** Jefe de Ventas · **Tareas:** `[empresa]/tareas/ventas-ventas-online.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -36,4 +36,4 @@ Cuando el negocio vende o venderá por internet (tienda propia, Mercado Libre, I
 
 ## Materiales que puede pedir al humano
 
-- Fotos de producto en `negocio/items/productos/` (JPG o PNG), medidas y stock disponible.
+- Fotos de producto en `[empresa]/items/productos/` (JPG o PNG), medidas y stock disponible.

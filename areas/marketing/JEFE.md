@@ -1,6 +1,6 @@
 # Jefe de Marketing — Marketing
 
-**Catálogo:** `areas/marketing/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/marketing-jefe.md`
+**Catálogo:** `areas/marketing/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/marketing-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -37,7 +37,7 @@ En validación, para probar mensajes y canales con experimentos baratos. Impresc
 
 ## Materiales que puede pedir al humano
 
-- Fotos, videos y material de marca en `negocio/items/marketing/`.
+- Fotos, videos y material de marca en `[empresa]/items/marketing/`.
 
 ## Equipo del área
 

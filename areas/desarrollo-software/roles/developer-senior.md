@@ -1,6 +1,6 @@
 # Developer senior — Desarrollo de software
 
-**Catálogo:** `areas/desarrollo-software/roles/developer-senior.md` · **Reporta a:** Jefe de Desarrollo de Software · **Tareas:** `negocio/tareas/desarrollo-software-developer-senior.md`
+**Catálogo:** `areas/desarrollo-software/roles/developer-senior.md` · **Reporta a:** Jefe de Desarrollo de Software · **Tareas:** `[empresa]/tareas/desarrollo-software-developer-senior.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -21,7 +21,7 @@ Cuando hay que construir o modificar software.
 
 ## Entregables y métricas
 
-- Código funcionando en el proyecto — pasa las pruebas y la revisión de QA.
+- Código funcionando en `[empresa]/software/` — pasa las pruebas y la revisión de QA.
 - Instrucciones de ejecución y publicación — otra persona puede seguirlas.
 
 ## Autoridad de decisión

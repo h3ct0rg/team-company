@@ -1,6 +1,6 @@
 # Administración de personal — Personas
 
-**Catálogo:** `areas/personas/roles/administracion-personal.md` · **Reporta a:** Jefe de Personas · **Tareas:** `negocio/tareas/personas-administracion-personal.md`
+**Catálogo:** `areas/personas/roles/administracion-personal.md` · **Reporta a:** Jefe de Personas · **Tareas:** `[empresa]/tareas/personas-administracion-personal.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -34,4 +34,4 @@ Cuando ya hay personas contratadas.
 
 ## Materiales que puede pedir al humano
 
-- Contratos firmados y liquidaciones en `negocio/items/personas/`.
+- Contratos firmados y liquidaciones en `[empresa]/items/personas/`.

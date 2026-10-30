@@ -1,6 +1,6 @@
 # Formalización y permisos — Legal
 
-**Catálogo:** `areas/legal/roles/formalizacion-permisos.md` · **Reporta a:** Jefe de Legal · **Tareas:** `negocio/tareas/legal-formalizacion-permisos.md`
+**Catálogo:** `areas/legal/roles/formalizacion-permisos.md` · **Reporta a:** Jefe de Legal · **Tareas:** `[empresa]/tareas/legal-formalizacion-permisos.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -15,7 +15,7 @@ Cuando el negocio va a formalizarse o el rubro requiere permisos.
 ## Responsabilidades
 
 - Identificar trámites, organismos, costos y plazos con fuentes oficiales fechadas.
-- Ordenar los trámites en una secuencia y registrarlos como tareas en `negocio/tareas/HUMANO.md`.
+- Ordenar los trámites en una secuencia y registrarlos como tareas en `[empresa]/tareas/HUMANO.md`.
 - Preparar listas de documentos necesarios para cada trámite.
 - Coordinar con Contabilidad e impuestos los aspectos tributarios.
 
@@ -35,4 +35,4 @@ Cuando el negocio va a formalizarse o el rubro requiere permisos.
 
 ## Materiales que puede pedir al humano
 
-- Comprobantes de trámites realizados en `negocio/items/legal/`.
+- Comprobantes de trámites realizados en `[empresa]/items/legal/`.

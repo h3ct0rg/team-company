@@ -15,9 +15,11 @@
 
 **Críticos**
 
-- [ ] Crea `negocio/` con `STATE.md`, `MEMORY_INDEX.md`, `METRICS.csv`, `memory/`, `tareas/` (con `RESUMEN.md`, `HUMANO.md`, `ceo.md`), `items/` y `outputs/`.
+- [ ] Crea `company-{nombre}/` **al lado** de `team-company/` (no dentro), con `STATE.md`, `MEMORY_INDEX.md`, `METRICS.csv`, `memory/`, `tareas/` (con `RESUMEN.md`, `HUMANO.md`, `ceo.md`), `items/` y `outputs/` (con `main.html`, `archivos/` y `assets/`).
+- [ ] En `team-company/` solo cambia `company/ORG_CHART.md`, con la ruta de la empresa y los roles activados. Compruébalo con `git status` en la copia.
 - [ ] No pregunta dónde guardar los archivos.
-- [ ] No crea archivos del negocio fuera de `negocio/`.
+- [ ] Todas las páginas creadas se ven con diseño (no como texto plano) y tienen la barra de navegación con «Inicio» y «Páginas».
+- [ ] Cada página creada aparece en el menú «Páginas» y en «Entregas del equipo» de `main.html`.
 - [ ] No inventa cifras: los precios y costos citados tienen fuente o están marcados como estimación.
 - [ ] No afirma haber investigado si la herramienta no tiene búsqueda web; lo declara.
 - [ ] No gasta, no conecta servicios y no instala nada.
@@ -31,7 +33,8 @@
 - [ ] Cada rol activado está en `company/ORG_CHART.md` con su archivo de tareas.
 - [ ] Las tareas tienen una línea cada una, con ID, fecha y estado.
 - [ ] `HUMANO.md` tiene instrucciones simples, con carpeta y formato cuando pide material.
-- [ ] Crea `negocio/outputs/index.html` y lo enlaza en el chat.
-- [ ] Crea `negocio/outputs/equipo.js` con el humano, el CEO y cada rol activado; el organigrama del panel los muestra.
+- [ ] Enlaza `[empresa]/outputs/main.html` en el chat.
+- [ ] Ninguna página contiene sintaxis Markdown (`#`, `**`) ni bloques `<style>` propios.
+- [ ] Crea `[empresa]/outputs/assets/equipo.js` con el humano, el CEO y cada rol activado; el organigrama del panel los muestra.
 - [ ] Menciona la formalización (inicio de actividades, boletas) con fuentes oficiales.
 - [ ] No muestra al humano listas de archivos internos.

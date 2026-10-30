@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Nombre de la empresa] · Inicio</title>
+  <link rel="stylesheet" href="assets/estilo.css">
+  <!--
+    Página principal del humano: [empresa]/outputs/main.html.
+    El CEO actualiza solo el texto entre corchetes (etapa, pendientes, cifras, prioridad, bloqueos).
+    No copies estilos aquí ni edites el menú, el organigrama ni la lista de entregas:
+    se dibujan solos con assets/paginas.js y assets/equipo.js.
+    Cifras desconocidas: muéstralas como "sin dato", nunca las inventes.
+  -->
+</head>
+<body>
+  <header class="hero">
+    <p>Panel de la empresa · actualizado [AAAA-MM-DD]</p>
+    <h1>[Nombre de la empresa]</h1>
+    <span class="stage">Etapa: [idea / investigación / validación / lanzamiento / operación]</span>
+  </header>
+
+  <main>
+    <section class="todo">
+      <h2>Lo que te toca hacer</h2>
+      <ul>
+        <li>[Tarea de HUMANO.md en lenguaje simple] — [para cuándo] — <a href="[página relacionada].html">ver detalle</a></li>
+      </ul>
+      <p class="note">Cuando termines algo, avísalo en el chat.</p>
+    </section>
+
+    <section>
+      <h2>Cómo vamos</h2>
+      <div class="kpis">
+        <div class="kpi"><span>Ventas de la semana</span><b>[n o «sin dato»]</b></div>
+        <div class="kpi"><span>Ingresos de la semana</span><b>[monto]</b></div>
+        <div class="kpi"><span>Caja disponible</span><b>[monto]</b></div>
+        <div class="kpi"><span>Interesados</span><b>[n]</b></div>
+      </div>
+      <p class="note">[Comparación breve con la semana anterior y qué significa.]</p>
+    </section>
+
+    <section>
+      <h2>Prioridad de esta etapa</h2>
+      <p>[Qué estamos intentando lograr ahora y cómo sabremos que lo logramos.]</p>
+    </section>
+
+    <section>
+      <h2>Bloqueos y decisiones pendientes</h2>
+      <p class="alert">[Decisión o aprobación que necesitamos de ti. Si no hay ninguna, dilo.]</p>
+    </section>
+
+    <section>
+      <h2>Entregas del equipo</h2>
+      <div id="entregas" class="entregas"></div>
+    </section>
+
+    <section>
+      <h2>Tu equipo</h2>
+      <p class="note">Pasa el mouse o toca un agente para ver qué hace y en qué está. <span id="team-date"></span></p>
+      <div class="legend" aria-hidden="true">
+        <span class="s-work"><i class="dot"></i>Trabajando</span>
+        <span class="s-late"><i class="dot"></i>Con tareas vencidas</span>
+        <span class="s-block"><i class="dot"></i>Bloqueado</span>
+        <span class="s-idle"><i class="dot"></i>Sin tareas</span>
+      </div>
+      <div id="org" class="org"></div>
+    </section>
+  </main>
+
+  <footer class="pie">Preparado por el CEO · Escribe en el chat «mis pendientes» o «revisión semanal» cuando quieras.</footer>
+
+  <script src="assets/paginas.js"></script>
+  <script src="assets/equipo.js"></script>
+  <script src="assets/navegacion.js"></script>
+  <script src="assets/organigrama.js"></script>
+</body>
+</html>

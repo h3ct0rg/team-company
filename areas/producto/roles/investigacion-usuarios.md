@@ -1,6 +1,6 @@
 # Investigación de usuarios — Producto
 
-**Catálogo:** `areas/producto/roles/investigacion-usuarios.md` · **Reporta a:** Jefe de Producto · **Tareas:** `negocio/tareas/producto-investigacion-usuarios.md`
+**Catálogo:** `areas/producto/roles/investigacion-usuarios.md` · **Reporta a:** Jefe de Producto · **Tareas:** `[empresa]/tareas/producto-investigacion-usuarios.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando hay que entrevistar, encuestar o validar con clientes reales.
 
 ## Materiales que puede pedir al humano
 
-- Notas o grabaciones de conversaciones con clientes (con su consentimiento) en `negocio/items/producto/`.
+- Notas o grabaciones de conversaciones con clientes (con su consentimiento) en `[empresa]/items/producto/`.

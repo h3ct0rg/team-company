@@ -1,3 +1,4 @@
+// Datos ficticios de demostración.
 window.EQUIPO = {
   actualizado: "2026-10-30",
   agentes: [
@@ -11,26 +12,16 @@ window.EQUIPO = {
       abiertas: 3, bloqueadas: 0, vencidas: 0, bloqueos: [] },
     { id: "A-002", puesto: "Jefe de Marketing", area: "Marketing", jefe: "A-001",
       proposito: "Que los clientes correctos conozcan el negocio y quieran comprar, al menor costo posible.",
-      ahora: ["Plan de lanzamiento en Instagram"],
-      abiertas: 4, bloqueadas: 0, vencidas: 0, bloqueos: [] },
+      ahora: ["Plan de lanzamiento en Instagram"], abiertas: 4, bloqueadas: 0, vencidas: 0, bloqueos: [] },
     { id: "A-003", puesto: "Social media manager", area: "Marketing", jefe: "A-002",
       proposito: "Construir presencia en redes que genere interesados y ventas, no solo seguidores.",
       ahora: [], abiertas: 2, bloqueadas: 1, vencidas: 0,
       bloqueos: ["Calendario de noviembre: espera tus fotos de producto"] },
-    { id: "A-004", puesto: "Contenido y copywriting", area: "Marketing", jefe: "A-002",
-      proposito: "Escribir textos claros y persuasivos que expliquen el valor y lleven a la compra.",
-      ahora: ["Textos de las 5 fichas de producto"], abiertas: 1, bloqueadas: 0, vencidas: 0, bloqueos: [] },
-    { id: "A-005", puesto: "Jefe de Finanzas", area: "Finanzas", jefe: "A-001",
+    { id: "A-004", puesto: "Jefe de Finanzas", area: "Finanzas", jefe: "A-001",
       proposito: "Que el negocio sepa si gana o pierde dinero y cuánto le queda.",
       ahora: ["Costo por polera con el proveedor elegido"], abiertas: 2, bloqueadas: 0, vencidas: 1, bloqueos: [] },
-    { id: "A-006", puesto: "Jefe de Ventas", area: "Ventas", jefe: "A-001",
-      proposito: "Conseguir las primeras ventas y convertirlas en un proceso repetible.",
-      ahora: [], abiertas: 0, bloqueadas: 0, vencidas: 0, bloqueos: [] },
-    { id: "A-007", puesto: "Ventas online", area: "Ventas", jefe: "A-006",
-      proposito: "Vender por tienda online y marketplaces con fichas que conviertan.",
-      ahora: ["Comparar Mercado Libre vs. tienda propia"], abiertas: 1, bloqueadas: 0, vencidas: 0, bloqueos: [] },
-    { id: "A-008", puesto: "Jefe de Compras", area: "Compras y proveedores", jefe: "A-001",
-      proposito: "Conseguir insumos con buena calidad, precio y confiabilidad.",
-      ahora: ["Cotizar 3 talleres de estampado"], abiertas: 2, bloqueadas: 0, vencidas: 0, bloqueos: [] }
+    { id: "A-005", puesto: "Analista financiero", area: "Finanzas", jefe: "A-004",
+      proposito: "Convertir costos, precios y ventas en escenarios que permitan decidir.",
+      ahora: [], abiertas: 0, bloqueadas: 0, vencidas: 0, bloqueos: [] }
   ]
 };

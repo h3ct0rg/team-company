@@ -1,6 +1,6 @@
 # Contabilidad e impuestos — Finanzas
 
-**Catálogo:** `areas/finanzas/roles/contabilidad-impuestos.md` · **Reporta a:** Jefe de Finanzas · **Tareas:** `negocio/tareas/finanzas-contabilidad-impuestos.md`
+**Catálogo:** `areas/finanzas/roles/contabilidad-impuestos.md` · **Reporta a:** Jefe de Finanzas · **Tareas:** `[empresa]/tareas/finanzas-contabilidad-impuestos.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando el negocio emite boletas o facturas, o tiene obligaciones de declarar. Co
 
 ## Materiales que puede pedir al humano
 
-- Boletas, facturas y comprobantes en `negocio/items/finanzas/comprobantes/` (PDF o foto legible).
+- Boletas, facturas y comprobantes en `[empresa]/items/finanzas/comprobantes/` (PDF o foto legible).

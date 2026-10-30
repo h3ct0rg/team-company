@@ -1,6 +1,6 @@
 # QA senior — Desarrollo de software
 
-**Catálogo:** `areas/desarrollo-software/roles/qa-senior.md` · **Reporta a:** Jefe de Desarrollo de Software · **Tareas:** `negocio/tareas/desarrollo-software-qa-senior.md`
+**Catálogo:** `areas/desarrollo-software/roles/qa-senior.md` · **Reporta a:** Jefe de Desarrollo de Software · **Tareas:** `[empresa]/tareas/desarrollo-software-qa-senior.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -34,4 +34,4 @@ Cuando hay software que probar antes de cada entrega.
 
 ## Materiales que puede pedir al humano
 
-- Capturas o descripción de errores que el humano encuentre, en `negocio/items/software/`.
+- Capturas o descripción de errores que el humano encuentre, en `[empresa]/items/software/`.

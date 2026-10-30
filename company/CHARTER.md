@@ -4,7 +4,7 @@
 
 Convertir ideas de negocio en empresas con una propuesta de valor comprobable, objetivos explícitos y ejecución responsable. La empresa debe ser portable entre modelos y harnesses.
 
-Cada copia de este repositorio opera **un solo negocio**. Para otro negocio se usa una copia limpia del repositorio.
+Cada copia de esta carpeta de agentes opera **una sola empresa**. Para otra empresa se usa una copia limpia de la carpeta de agentes.
 
 ## Equipo y contrataciones
 
@@ -44,7 +44,7 @@ La solicitud sigue `protocols/APPROVALS.md`. La aprobación de una acción no au
 
 ## Información y evidencia
 
-- Primero usa la información de la conversación, los archivos del proyecto y fuentes públicas accesibles.
+- Primero usa la información de la conversación, los archivos de la empresa y fuentes públicas accesibles.
 - Para información cambiante o afirmaciones de mercado, busca evidencia reciente y conserva enlace, fecha de consulta y qué respalda la fuente.
 - Separa en los documentos **Hechos**, **Supuestos**, **Estimaciones** y **Preguntas abiertas**.
 - No inventes cifras, fuentes, resultados de herramientas, acciones completadas ni información sobre el usuario.
@@ -58,36 +58,53 @@ Leer de más cuesta tiempo y dinero, y empeora las respuestas. Cada agente lee p
 
 ## Archivos y datos
 
-- La carpeta del equipo (todo lo que está fuera de `negocio/`) contiene solo reglas, roles, organigrama, comandos, plantillas y pruebas. No guardes allí datos, memoria ni entregables del negocio.
-- Todos los datos del negocio viven en `negocio/`, con esta estructura:
+Hay dos carpetas, una al lado de la otra:
 
 ```text
-negocio/
+[carpeta contenedora]/
+├── team-company/          carpeta de los agentes: reglas, roles, organigrama, comandos, plantillas y pruebas
+└── company-{nombre}/      carpeta de la empresa: todo lo específico del negocio
+```
+
+- **La carpeta de los agentes no guarda nada del negocio**: ni datos, ni memoria, ni tareas, ni páginas, planillas o PDF. La única excepción es el registro del equipo en `company/ORG_CHART.md`, que incluye la ruta de la carpeta de la empresa.
+- **La carpeta de la empresa** se llama `company-{nombre-en-minúsculas-con-guiones}` (por ejemplo, `company-poleras-del-sur`) y se crea **al mismo nivel** que la carpeta de los agentes. En los documentos se escribe `[empresa]/`. Si el humano indica otra ruta, se usa esa.
+- Estructura de la carpeta de la empresa:
+
+```text
+company-{nombre}/
 ├── STATE.md          estado breve del negocio
 ├── MEMORY_INDEX.md   índice de la memoria
 ├── METRICS.csv       métricas semanales
 ├── memory/           decisiones, investigación, aprendizajes, conexiones
 ├── tareas/           tareas abiertas por rol, resumen y archivo mensual
 ├── items/            materiales que aporta el humano
-└── outputs/          páginas HTML para el humano; index.html es el panel
+├── software/         código propio, solo si el negocio lo necesita
+└── outputs/          lo que se entrega al humano
+    ├── main.html     página principal
+    ├── *.html        páginas de cada área
+    ├── archivos/     planillas, PDF, imágenes y otros archivos
+    └── assets/       estilo, navegación y datos de las páginas
 ```
 
-- Si `negocio/` no existe, el CEO la crea con las plantillas de `templates/` al iniciar el negocio. Si existe, se reutiliza.
-- Los agentes pueden crear, editar y versionar libremente los archivos que crea el equipo, dentro y fuera de `negocio/`.
-- **Los archivos que el humano aporta en `negocio/items/` nunca se modifican ni se sobrescriben.** Si hace falta una versión editada (por ejemplo, una foto recortada), se crea una copia en `negocio/outputs/` o en otra carpeta del equipo. Mover o borrar un archivo del humano requiere aprobación.
-- No se crean, modifican ni borran archivos fuera de la carpeta del proyecto sin aprobación.
+- El CEO crea la carpeta de la empresa con las plantillas de `templates/` al iniciar el negocio y anota su ruta en `company/ORG_CHART.md`. Si ya existe, se reutiliza; nunca se sobrescribe la carpeta de otra empresa.
+- Si la herramienta de IA no puede escribir en la carpeta de la empresa (por ejemplo, porque solo tiene acceso a la carpeta de los agentes), explica la limitación en lenguaje simple y pide al humano que dé acceso a la carpeta contenedora. **Nunca guardes los archivos del negocio dentro de la carpeta de los agentes como alternativa.**
+- Si la empresa cambia de nombre, el CEO propone renombrar la carpeta y espera aprobación, porque cambia dónde el humano encuentra sus archivos.
+- Los agentes pueden crear, editar y versionar libremente los archivos que crea el equipo en ambas carpetas.
+- **Los archivos que el humano aporta en `[empresa]/items/` nunca se modifican ni se sobrescriben.** Si hace falta una versión editada (por ejemplo, una foto recortada), se crea una copia en `[empresa]/outputs/archivos/`. Mover o borrar un archivo del humano requiere aprobación.
+- No se crean, modifican ni borran archivos fuera de la carpeta de los agentes y la carpeta de la empresa sin aprobación.
 - No coloques credenciales, claves, tokens ni datos personales sensibles en Markdown, memoria ni tareas.
-- Los materiales que debe proporcionar el humano se solicitan con ruta, formato, propósito y quién los necesita; por ejemplo: «Sube fotos frontales y de detalle de cada polera en `negocio/items/marketing/`». La solicitud también se registra como tarea en `negocio/tareas/HUMANO.md`.
+- Los materiales que debe proporcionar el humano se solicitan con ruta, formato, propósito y quién los necesita; por ejemplo: «Sube fotos frontales y de detalle de cada polera en `[empresa]/items/marketing/`». La solicitud también se registra como tarea en `[empresa]/tareas/HUMANO.md`.
 - Registra las decisiones duraderas y el conocimiento reutilizable en memoria, no el historial completo del chat.
 
 ## Entregables para el humano
 
 - El humano recibe resultados en lenguaje cotidiano y no necesita leer la estructura interna de archivos Markdown.
-- El CEO mantiene `negocio/outputs/index.html` como **panel y entrada única** del humano: etapa actual, lo que le toca hacer, métricas principales, bloqueos, organigrama interactivo del equipo y enlaces a las entregas de cada área. Usa `templates/PANEL.html` como guía; el organigrama toma sus datos de `negocio/outputs/equipo.js`.
-- El agente o jefe responsable del trabajo prepara y entrega su propio HTML visual cuando el resultado requiera revisión, decisión o acción del humano. Es dueño del contenido de su área y no necesita que el CEO lo convierta en una página. El panel lo enlaza.
+- El CEO mantiene `[empresa]/outputs/main.html` como **página principal y entrada única** del humano: etapa actual, lo que le toca hacer, métricas principales, bloqueos, entregas del equipo y organigrama interactivo.
+- Todas las páginas comparten el mismo diseño y una barra de navegación que lleva a la página principal y a cualquier otra página. Las reglas para crearlas están en `protocols/WEB.md` y son obligatorias.
+- El agente o jefe responsable del trabajo prepara y entrega su propia página cuando el resultado requiera revisión, decisión o acción del humano. Es dueño del contenido de su área y no necesita que el CEO lo convierta en una página. Al registrarla, aparece sola en el menú y en la página principal.
 - Cada página debe explicar qué significa el resultado, qué recomienda el responsable y qué acción concreta se espera del humano. Usa secciones claras, lenguaje sencillo y enlaces a evidencia relevante.
-- Guarda las páginas en `negocio/outputs/` y comparte su ruta o enlace en el chat con una breve explicación. Markdown sigue siendo útil como memoria y fuente interna; no es el formato principal de lectura para el humano.
-- Crea páginas específicas cuando haya contenido útil para mostrar; no generes archivos por rutina ni dupliques una misma entrega en varias páginas.
+- Comparte en el chat la ruta o el enlace de la página con una breve explicación. Markdown sigue siendo útil como memoria y fuente interna; no es el formato de lectura para el humano.
+- Crea páginas cuando haya contenido útil para mostrar; no generes archivos por rutina ni dupliques una misma entrega en varias páginas. Si el tema ya tiene página, actualízala.
 
 ## Portabilidad
 

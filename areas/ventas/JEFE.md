@@ -1,6 +1,6 @@
 # Jefe de Ventas — Ventas
 
-**Catálogo:** `areas/ventas/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/ventas-jefe.md`
+**Catálogo:** `areas/ventas/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/ventas-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -22,7 +22,7 @@ En validación, cuando haya que conseguir preventas, cotizaciones o primeros cli
 ## Entregables y métricas
 
 - Proceso de venta en una página — el humano puede seguirlo sin ayuda.
-- Embudo semanal en `negocio/METRICS.csv` — tasa de cierre y ventas.
+- Embudo semanal en `[empresa]/METRICS.csv` — tasa de cierre y ventas.
 
 ## Autoridad de decisión
 
@@ -36,7 +36,7 @@ En validación, cuando haya que conseguir preventas, cotizaciones o primeros cli
 
 ## Materiales que puede pedir al humano
 
-- Lista de contactos o clientes actuales en `negocio/items/ventas/` (planilla), sin datos sensibles innecesarios.
+- Lista de contactos o clientes actuales en `[empresa]/items/ventas/` (planilla), sin datos sensibles innecesarios.
 
 ## Equipo del área
 

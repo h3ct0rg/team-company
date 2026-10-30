@@ -1,6 +1,6 @@
 # Contratos y privacidad — Legal
 
-**Catálogo:** `areas/legal/roles/contratos-privacidad.md` · **Reporta a:** Jefe de Legal · **Tareas:** `negocio/tareas/legal-contratos-privacidad.md`
+**Catálogo:** `areas/legal/roles/contratos-privacidad.md` · **Reporta a:** Jefe de Legal · **Tareas:** `[empresa]/tareas/legal-contratos-privacidad.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -34,4 +34,4 @@ Cuando hay contratos con clientes, proveedores o socios, o el negocio guarda dat
 
 ## Materiales que puede pedir al humano
 
-- Contratos recibidos en `negocio/items/legal/` (PDF).
+- Contratos recibidos en `[empresa]/items/legal/` (PDF).

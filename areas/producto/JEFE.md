@@ -1,6 +1,6 @@
 # Jefe de Producto — Producto
 
-**Catálogo:** `areas/producto/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/producto-jefe.md`
+**Catálogo:** `areas/producto/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/producto-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -36,7 +36,7 @@ Desde la idea y la investigación, para definir cliente, problema y oferta. En n
 
 ## Materiales que puede pedir al humano
 
-- Respuestas de clientes, notas de conversaciones y prototipos en `negocio/items/producto/`.
+- Respuestas de clientes, notas de conversaciones y prototipos en `[empresa]/items/producto/`.
 
 ## Equipo del área
 

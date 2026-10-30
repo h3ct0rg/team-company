@@ -1,6 +1,6 @@
 # Soporte al cliente — Atención al cliente
 
-**Catálogo:** `areas/atencion-cliente/roles/soporte-cliente.md` · **Reporta a:** Jefe de Atención al Cliente · **Tareas:** `negocio/tareas/atencion-cliente-soporte-cliente.md`
+**Catálogo:** `areas/atencion-cliente/roles/soporte-cliente.md` · **Reporta a:** Jefe de Atención al Cliente · **Tareas:** `[empresa]/tareas/atencion-cliente-soporte-cliente.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando el volumen de consultas requiere atención diaria.
 
 ## Materiales que puede pedir al humano
 
-- Conversaciones relevantes copiadas en `negocio/items/atencion/`.
+- Conversaciones relevantes copiadas en `[empresa]/items/atencion/`.

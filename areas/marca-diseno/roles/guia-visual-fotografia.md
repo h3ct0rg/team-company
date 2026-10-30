@@ -1,6 +1,6 @@
 # Guía visual y fotografía — Marca y diseño
 
-**Catálogo:** `areas/marca-diseno/roles/guia-visual-fotografia.md` · **Reporta a:** Jefe de Marca y Diseño · **Tareas:** `negocio/tareas/marca-diseno-guia-visual-fotografia.md`
+**Catálogo:** `areas/marca-diseno/roles/guia-visual-fotografia.md` · **Reporta a:** Jefe de Marca y Diseño · **Tareas:** `[empresa]/tareas/marca-diseno-guia-visual-fotografia.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -34,4 +34,4 @@ Cuando el humano debe producir fotos o videos de producto, del servicio o del eq
 
 ## Materiales que puede pedir al humano
 
-- Fotos y videos en `negocio/items/marketing/` o `negocio/items/productos/`, con los nombres indicados en la lista de tomas.
+- Fotos y videos en `[empresa]/items/marketing/` o `[empresa]/items/productos/`, con los nombres indicados en la lista de tomas.

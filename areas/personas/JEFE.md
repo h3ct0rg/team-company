@@ -1,6 +1,6 @@
 # Jefe de Personas (RR. HH.) — Personas
 
-**Catálogo:** `areas/personas/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/personas-jefe.md`
+**Catálogo:** `areas/personas/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/personas-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -36,7 +36,7 @@ Solo cuando el negocio va a contratar personas reales (empleados, freelancers o 
 
 ## Materiales que puede pedir al humano
 
-- Presupuesto para el puesto y currículums recibidos en `negocio/items/personas/` (datos personales tratados con cuidado).
+- Presupuesto para el puesto y currículums recibidos en `[empresa]/items/personas/` (datos personales tratados con cuidado).
 
 ## Equipo del área
 

@@ -1,6 +1,6 @@
 # Logística y despachos — Operaciones
 
-**Catálogo:** `areas/operaciones/roles/logistica-despachos.md` · **Reporta a:** Jefe de Operaciones · **Tareas:** `negocio/tareas/operaciones-logistica-despachos.md`
+**Catálogo:** `areas/operaciones/roles/logistica-despachos.md` · **Reporta a:** Jefe de Operaciones · **Tareas:** `[empresa]/tareas/operaciones-logistica-despachos.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -36,4 +36,4 @@ Cuando hay productos físicos que enviar, retirar o entregar.
 
 ## Materiales que puede pedir al humano
 
-- Peso y medidas de los productos empacados en `negocio/items/operaciones/`.
+- Peso y medidas de los productos empacados en `[empresa]/items/operaciones/`.

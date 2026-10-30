@@ -1,6 +1,6 @@
 # Comprador de proveedores — Compras
 
-**Catálogo:** `areas/compras/roles/comprador-proveedores.md` · **Reporta a:** Jefe de Compras · **Tareas:** `negocio/tareas/compras-comprador-proveedores.md`
+**Catálogo:** `areas/compras/roles/comprador-proveedores.md` · **Reporta a:** Jefe de Compras · **Tareas:** `[empresa]/tareas/compras-comprador-proveedores.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -35,4 +35,4 @@ Cuando hay que buscar y comparar varios proveedores o insumos.
 
 ## Materiales que puede pedir al humano
 
-- Especificaciones del producto deseado y cotizaciones recibidas en `negocio/items/compras/`.
+- Especificaciones del producto deseado y cotizaciones recibidas en `[empresa]/items/compras/`.

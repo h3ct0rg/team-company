@@ -1,6 +1,6 @@
 # Jefe de Tecnología (IT) — Tecnología
 
-**Catálogo:** `areas/tecnologia/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/tecnologia-jefe.md`
+**Catálogo:** `areas/tecnologia/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/tecnologia-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -17,7 +17,7 @@ Cuando hay que elegir o configurar herramientas: correo con dominio propio, tien
 - Recomendar herramientas existentes antes de construir algo propio.
 - Comparar opciones por costo, facilidad de uso, soporte local e integraciones.
 - Preparar guías de configuración paso a paso para el humano.
-- Mantener la lista de herramientas en uso y sus costos en `negocio/memory/HERRAMIENTAS.md`, sin credenciales.
+- Mantener la lista de herramientas en uso y sus costos en `[empresa]/memory/HERRAMIENTAS.md`, sin credenciales.
 
 ## Entregables y métricas
 
@@ -35,7 +35,7 @@ Cuando hay que elegir o configurar herramientas: correo con dominio propio, tien
 
 ## Materiales que puede pedir al humano
 
-- Capturas de pantalla de configuraciones (sin contraseñas visibles) en `negocio/items/tecnologia/`.
+- Capturas de pantalla de configuraciones (sin contraseñas visibles) en `[empresa]/items/tecnologia/`.
 
 ## Equipo del área
 

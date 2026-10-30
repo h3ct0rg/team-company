@@ -1,6 +1,6 @@
 # UX senior — Desarrollo de software
 
-**Catálogo:** `areas/desarrollo-software/roles/ux-senior.md` · **Reporta a:** Jefe de Desarrollo de Software · **Tareas:** `negocio/tareas/desarrollo-software-ux-senior.md`
+**Catálogo:** `areas/desarrollo-software/roles/ux-senior.md` · **Reporta a:** Jefe de Desarrollo de Software · **Tareas:** `[empresa]/tareas/desarrollo-software-ux-senior.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -20,7 +20,7 @@ Cuando hay pantallas o flujos que diseñar para clientes o para el humano.
 
 ## Entregables y métricas
 
-- Prototipos en `negocio/outputs/` — el humano puede probarlos en el navegador.
+- Prototipos en `[empresa]/outputs/` — el humano puede probarlos en el navegador.
 - Hallazgos de pruebas de uso — tareas completadas sin ayuda.
 
 ## Autoridad de decisión
@@ -34,4 +34,4 @@ Cuando hay pantallas o flujos que diseñar para clientes o para el humano.
 
 ## Materiales que puede pedir al humano
 
-- Apps o webs de referencia que le gusten, en `negocio/items/software/`.
+- Apps o webs de referencia que le gusten, en `[empresa]/items/software/`.

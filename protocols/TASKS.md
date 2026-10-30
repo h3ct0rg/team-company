@@ -7,7 +7,7 @@ Que cada agente sepa qué hacer y que el estado de la empresa se conozca **leyen
 ## Archivos
 
 ```text
-negocio/tareas/
+[empresa]/tareas/
 ├── RESUMEN.md            estado de todos los roles en pocas líneas (lo que lee el CEO)
 ├── HUMANO.md             lo que debe hacer el humano
 ├── ceo.md                tareas abiertas del CEO
@@ -23,7 +23,7 @@ Plantillas: `templates/TASKS.md` y `templates/TASKS_SUMMARY.md`.
 Una tarea ocupa **una sola línea**:
 
 ```text
-- [ ] T-042 | vence 2026-11-05 | Cotizar 3 proveedores de estampado | pidió: compras-jefe | detalle: negocio/memory/proveedores.md
+- [ ] T-042 | vence 2026-11-05 | Cotizar 3 proveedores de estampado | pidió: compras-jefe | detalle: [empresa]/memory/proveedores.md
 ```
 
 - Estados: `[ ]` pendiente · `[~]` en curso · `[!]` bloqueada (agrega `bloqueo: motivo`).
@@ -39,7 +39,7 @@ Una tarea ocupa **una sola línea**:
 3. **Terminar:** el responsable **borra la línea de su archivo de inmediato** y la agrega al final de `archivo/AAAA-MM.md` del mes en curso, con la fecha y un resultado de una frase:
 
    ```text
-   - [x] T-042 | terminada 2026-11-03 | Cotizar 3 proveedores de estampado | resultado: elegido Estampados Sur, ver negocio/memory/proveedores.md
+   - [x] T-042 | terminada 2026-11-03 | Cotizar 3 proveedores de estampado | resultado: elegido Estampados Sur, ver [empresa]/memory/proveedores.md
    ```
 
    Las tareas descartadas se archivan igual, con `[-]` y el motivo.
@@ -50,14 +50,14 @@ Una tarea ocupa **una sola línea**:
 - Un archivo de rol contiene **solo tareas abiertas**. Si llega a 25, el jefe debe priorizar, descartar o reasignar antes de agregar más.
 - `HUMANO.md` debe tener como máximo 10 tareas abiertas. Si hay más, se priorizan y el resto espera en el archivo del rol que las necesita. El humano no debe sentirse abrumado.
 - `RESUMEN.md` tiene una fila por rol activo y como máximo 10 líneas de bloqueos y alertas.
-- `negocio/STATE.md` debe ocupar como máximo unas 60 líneas.
+- `[empresa]/STATE.md` debe ocupar como máximo unas 60 líneas.
 - Si un archivo de memoria supera unas 300 líneas, divídelo por tema o por período y actualiza `MEMORY_INDEX.md`.
 
 ## Lectura mínima
 
 Orden de lectura para cualquier agente:
 
-1. `negocio/tareas/RESUMEN.md`, si necesita saber el estado general.
+1. `[empresa]/tareas/RESUMEN.md`, si necesita saber el estado general.
 2. Su propio archivo de tareas.
 3. Solo los archivos enlazados en `detalle:` de la tarea en la que va a trabajar.
 
@@ -73,19 +73,19 @@ Reglas:
 `HUMANO.md` usa el mismo formato, más el rol que necesita el resultado y una instrucción que el humano pueda seguir sin conocimientos técnicos:
 
 ```text
-- [ ] T-051 | vence 2026-11-08 | Sube 5 fotos frontales de cada polera a negocio/items/marketing/ (JPG) | para: marketing-jefe
+- [ ] T-051 | vence 2026-11-08 | Sube 5 fotos frontales de cada polera a [empresa]/items/marketing/ (JPG) | para: marketing-jefe
 ```
 
 El humano no edita archivos: cuando dice en el chat que terminó, el agente que la pidió la archiva y actualiza el resumen.
 
 ## Organigrama del panel
 
-El panel `negocio/outputs/index.html` dibuja el organigrama con los datos de `negocio/outputs/equipo.js` (plantilla: `templates/EQUIPO.js`). Al pasar el mouse o tocar un agente, el humano ve qué hace y en qué está. El diseño del panel no se toca: solo se regenera ese archivo de datos.
+El panel `[empresa]/outputs/main.html` dibuja el organigrama con los datos de `[empresa]/outputs/assets/equipo.js` (plantilla: `templates/web/assets/equipo.js`). Al pasar el mouse o tocar un agente, el humano ve qué hace y en qué está. El diseño del panel no se toca: solo se regenera ese archivo de datos.
 
 - **Cuándo regenerarlo:** al activar o dar de baja un rol, y en cada revisión semanal.
 - **De dónde salen los datos**, con lectura mínima:
   - Puesto, área, jefe e ID: `company/ORG_CHART.md`, solo los roles activos o disponibles.
-  - Números, «Ahora» y bloqueos: `negocio/tareas/RESUMEN.md`.
+  - Números, «Ahora» y bloqueos: `[empresa]/tareas/RESUMEN.md`.
   - «Qué hace»: se conserva del `equipo.js` anterior. Solo se lee la sección «Propósito» del archivo de rol cuando el rol se activa por primera vez.
 - No leas los archivos de tareas de cada rol para generarlo.
 - Escribe en lenguaje simple, sin IDs de tareas ni rutas internas, y sin datos sensibles: el panel muestra todo lo que contiene el archivo.
@@ -93,7 +93,7 @@ El panel `negocio/outputs/index.html` dibuja el organigrama con los datos de `ne
 
 ## Métricas
 
-`negocio/METRICS.csv` guarda **una fila por semana** (plantilla: `templates/METRICS.csv`):
+`[empresa]/METRICS.csv` guarda **una fila por semana** (plantilla: `templates/METRICS.csv`):
 
 | Columna | Significado |
 |---|---|

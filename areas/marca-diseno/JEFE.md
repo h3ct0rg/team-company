@@ -1,6 +1,6 @@
 # Jefe de Marca y Diseño — Marca y diseño
 
-**Catálogo:** `areas/marca-diseno/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/marca-diseno-jefe.md`
+**Catálogo:** `areas/marca-diseno/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/marca-diseno-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -36,7 +36,7 @@ En validación, cuando hacen falta nombre, logo o piezas para probar el mercado.
 
 ## Materiales que puede pedir al humano
 
-- Referencias visuales que le gusten o no, en `negocio/items/marca/`.
+- Referencias visuales que le gusten o no, en `[empresa]/items/marca/`.
 
 ## Equipo del área
 

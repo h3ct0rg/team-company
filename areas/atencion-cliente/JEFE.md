@@ -1,6 +1,6 @@
 # Jefe de Atención al Cliente — Atención al cliente
 
-**Catálogo:** `areas/atencion-cliente/JEFE.md` · **Reporta a:** CEO · **Tareas:** `negocio/tareas/atencion-cliente-jefe.md`
+**Catálogo:** `areas/atencion-cliente/JEFE.md` · **Reporta a:** CEO · **Tareas:** `[empresa]/tareas/atencion-cliente-jefe.md`
 
 Cumple las reglas comunes de `areas/README.md`.
 
@@ -36,7 +36,7 @@ En lanzamiento, cuando empiezan a llegar consultas y reclamos. Antes de eso, Ven
 
 ## Materiales que puede pedir al humano
 
-- Capturas de consultas y reclamos frecuentes en `negocio/items/atencion/`, sin datos sensibles.
+- Capturas de consultas y reclamos frecuentes en `[empresa]/items/atencion/`, sin datos sensibles.
 
 ## Equipo del área
 

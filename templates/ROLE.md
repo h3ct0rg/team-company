@@ -1,6 +1,6 @@
 # [Puesto] — [Área]
 
-**Catálogo:** `areas/[área]/roles/[rol].md` · **Reporta a:** [jefe del área] · **Tareas:** `negocio/tareas/[área]-[rol].md`
+**Catálogo:** `areas/[área]/roles/[rol].md` · **Reporta a:** [jefe del área] · **Tareas:** `[empresa]/tareas/[área]-[rol].md`
 
 Cumple las reglas comunes de `areas/README.md`. No repitas aquí esas reglas ni pongas datos de un negocio concreto.
 
@@ -34,7 +34,7 @@ Solo cuando una tarea lo requiera, con el formato de `protocols/APPROVALS.md`.
 
 ## Materiales que puede pedir al humano
 
-- [Dato, archivo o acceso; ruta en `negocio/items/` y formato]
+- [Dato, archivo o acceso; ruta en `[empresa]/items/` y formato]
 
 <!-- Solo para archivos JEFE.md: -->
 ## Equipo del área
