@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Nombre del negocio] · Panel</title>
+  <!--
+    Guía para negocio/outputs/index.html, la entrada única del humano.
+    El CEO la actualiza en cada revisión semanal y cuando cambia algo importante.
+    Usa datos de STATE.md, tareas/RESUMEN.md, tareas/HUMANO.md y las últimas filas de METRICS.csv.
+    Cifras desconocidas: muéstralas como "sin dato", nunca las inventes.
+
+    La sección "Tu equipo" no se edita a mano: se dibuja sola con los datos de equipo.js,
+    que vive en la misma carpeta (plantilla: templates/EQUIPO.js). Para actualizar el
+    organigrama basta con regenerar equipo.js; no hace falta reescribir esta página.
+  -->
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18302b;
+      --muted: #52645f;
+      --paper: #f5f7f3;
+      --card: #fff;
+      --green: #176b52;
+      --mint: #e3f2eb;
+      --line: #dce5de;
+      --amber: #805400;
+      --amber-bg: #fff4dc;
+      --red: #a8321f;
+      --red-bg: #fde8e4;
+      --dot-work: #2e9e6b;
+      --dot-late: #d79a12;
+      --dot-block: #c2412d;
+      --dot-idle: #b8c4bd;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); line-height: 1.6; }
+    header { padding: 36px max(22px, calc((100% - 960px) / 2)); background: var(--green); color: white; }
+    header p { margin: 0 0 6px; opacity: .85; }
+    h1 { margin: 0; font-size: clamp(1.8rem, 5vw, 2.8rem); line-height: 1.1; }
+    .stage { display: inline-block; margin-top: 14px; padding: 4px 12px; border-radius: 99px; background: rgba(255,255,255,.18); }
+    main { width: min(960px, calc(100% - 32px)); margin: 24px auto 54px; }
+    section { margin: 16px 0; padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+    .todo { border: 0; background: var(--mint); }
+    .todo h2 { color: var(--green); }
+    h2 { margin: 0 0 10px; font-size: 1.25rem; }
+    .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+    .kpi { padding: 14px; border: 1px solid var(--line); border-radius: 12px; }
+    .kpi b { display: block; font-size: 1.5rem; }
+    .kpi span { color: var(--muted); font-size: .9rem; }
+    .alert { padding: 10px 14px; border-radius: 10px; background: var(--amber-bg); color: var(--amber); }
+    ul { padding-left: 20px; }
+    a { color: var(--green); }
+    .note { color: var(--muted); font-size: .95rem; }
+    footer { padding: 18px; text-align: center; color: var(--muted); font-size: .9rem; }
+
+    /* Organigrama */
+    .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 4px 0 14px; color: var(--muted); font-size: .88rem; }
+    .legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .dot { flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--dot); }
+    .s-human { --dot: var(--green); }
+    .s-work { --dot: var(--dot-work); }
+    .s-late { --dot: var(--dot-late); }
+    .s-block { --dot: var(--dot-block); }
+    .s-idle { --dot: var(--dot-idle); }
+    .org { overflow-x: auto; padding: 4px 2px 8px; }
+    .org ul { margin: 0; padding: 0; list-style: none; }
+    .node {
+      display: inline-flex; flex-direction: column; align-items: center; gap: 1px;
+      min-width: 128px; max-width: 176px; padding: 9px 12px;
+      border: 1px solid var(--line); border-radius: 12px; background: var(--card);
+      color: var(--ink); font: inherit; text-align: center; cursor: pointer;
+      transition: border-color .15s, box-shadow .15s;
+    }
+    .node:hover, .node:focus-visible, .node[aria-expanded="true"] {
+      border-color: var(--green); box-shadow: 0 2px 12px rgba(23,107,82,.16); outline: none;
+    }
+    .node .row { display: inline-flex; align-items: center; gap: 7px; }
+    .node strong { font-size: .93rem; line-height: 1.25; }
+    .node small { color: var(--muted); font-size: .78rem; line-height: 1.3; }
+    .node.s-human { background: var(--mint); }
+
+    @media (min-width: 641px) {
+      .org > ul { width: max-content; margin: 0 auto; }
+      .org ul ul { position: relative; padding-top: 20px; }
+      .org ul ul::before { content: ""; position: absolute; top: 0; left: 50%; height: 20px; border-left: 2px solid var(--line); }
+      .org ul { display: flex; justify-content: center; }
+      .org li { position: relative; display: flex; flex-direction: column; align-items: center; padding: 20px 5px 0; }
+      .org > ul > li { padding-top: 0; }
+      .org li::before, .org li::after { content: ""; position: absolute; top: 0; right: 50%; width: 50%; height: 20px; border-top: 2px solid var(--line); }
+      .org li::after { right: auto; left: 50%; border-left: 2px solid var(--line); }
+      .org li:only-child::before, .org li:only-child::after { display: none; }
+      .org li:only-child { padding-top: 0; }
+      .org li:first-child::before, .org li:last-child::after { border: 0; }
+      .org li:last-child::before { border-right: 2px solid var(--line); border-radius: 0 8px 0 0; }
+      .org li:first-child::after { border-radius: 8px 0 0 0; }
+    }
+    @media (max-width: 640px) {
+      .org ul ul { margin-left: 14px; padding-left: 14px; border-left: 2px solid var(--line); }
+      .org li { position: relative; padding-top: 8px; }
+      .org ul ul > li::before { content: ""; position: absolute; top: 28px; left: -14px; width: 12px; border-top: 2px solid var(--line); }
+      .node { flex-direction: row; justify-content: flex-start; gap: 8px; width: 100%; max-width: none; text-align: left; flex-wrap: wrap; }
+    }
+
+    .popover {
+      position: fixed; z-index: 10; width: min(330px, calc(100vw - 16px)); padding: 16px 18px;
+      border: 1px solid var(--line); border-radius: 14px; background: var(--card);
+      box-shadow: 0 12px 32px rgba(24,48,43,.2); font-size: .94rem; line-height: 1.5;
+    }
+    .popover[hidden] { display: none; }
+    .popover h3 { margin: 0; font-size: 1.1rem; }
+    .popover .meta { margin: 2px 0 8px; color: var(--muted); font-size: .84rem; }
+    .popover h4 { margin: 12px 0 3px; color: var(--muted); font-size: .76rem; letter-spacing: .05em; text-transform: uppercase; }
+    .popover p { margin: 0; }
+    .popover ul { margin: 0; padding-left: 18px; }
+    .popover .counts { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: .84rem; }
+    .popover .block li { color: var(--red); }
+    .pill { display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px; border-radius: 99px; background: var(--mint); color: var(--green); font-size: .8rem; }
+    .pill.s-late { background: var(--amber-bg); color: var(--amber); }
+    .pill.s-block { background: var(--red-bg); color: var(--red); }
+    .pill.s-idle { background: #eef1ef; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <p>Panel del negocio · actualizado [AAAA-MM-DD]</p>
+    <h1>[Nombre del negocio]</h1>
+    <span class="stage">Etapa: [idea / investigación / validación / lanzamiento / operación]</span>
+  </header>
+
+  <main>
+    <section class="todo">
+      <h2>Lo que te toca hacer</h2>
+      <ul>
+        <li>[Tarea de HUMANO.md en lenguaje simple] — [para cuándo] — <a href="[entrega relacionada].html">ver detalle</a></li>
+      </ul>
+      <p class="note">Cuando termines algo, avísalo en el chat.</p>
+    </section>
+
+    <section>
+      <h2>Cómo vamos</h2>
+      <div class="kpis">
+        <div class="kpi"><span>Ventas de la semana</span><b>[n o «sin dato»]</b></div>
+        <div class="kpi"><span>Ingresos de la semana</span><b>[monto]</b></div>
+        <div class="kpi"><span>Caja disponible</span><b>[monto]</b></div>
+        <div class="kpi"><span>Interesados</span><b>[n]</b></div>
+      </div>
+      <p class="note">[Comparación breve con la semana anterior y qué significa.]</p>
+    </section>
+
+    <section>
+      <h2>Prioridad de esta etapa</h2>
+      <p>[Qué estamos intentando lograr ahora y cómo sabremos que lo logramos.]</p>
+    </section>
+
+    <section>
+      <h2>Bloqueos y decisiones pendientes</h2>
+      <p class="alert">[Decisión o aprobación que necesitamos de ti. Si no hay ninguna, dilo.]</p>
+    </section>
+
+    <section>
+      <h2>Tu equipo</h2>
+      <p class="note">Pasa el mouse o toca un agente para ver qué hace y en qué está. <span id="team-date"></span></p>
+      <div class="legend" aria-hidden="true">
+        <span class="s-work"><i class="dot"></i>Trabajando</span>
+        <span class="s-late"><i class="dot"></i>Con tareas vencidas</span>
+        <span class="s-block"><i class="dot"></i>Bloqueado</span>
+        <span class="s-idle"><i class="dot"></i>Sin tareas</span>
+      </div>
+      <div id="org" class="org"></div>
+    </section>
+
+    <section>
+      <h2>Entregas de las áreas</h2>
+      <ul>
+        <li><a href="[archivo].html">[Título de la entrega]</a> — [área] · [fecha]</li>
+      </ul>
+    </section>
+  </main>
+
+  <div id="popover" class="popover" role="tooltip" hidden></div>
+
+  <footer>Preparado por el CEO · Escribe en el chat «mis pendientes» o «revisión semanal» cuando quieras.</footer>
+
+  <script src="equipo.js"></script>
+  <script>
+    (function () {
+      var data = window.EQUIPO;
+      var org = document.getElementById("org");
+      var pop = document.getElementById("popover");
+      if (!data || !Array.isArray(data.agentes) || !data.agentes.length) {
+        org.innerHTML = '<p class="note">El organigrama aparecerá cuando el CEO prepare el equipo.</p>';
+        return;
+      }
+      if (data.actualizado) document.getElementById("team-date").textContent = "Estado al " + data.actualizado + ".";
+
+      var STATES = {
+        human: { cls: "s-human", label: "Fundador" },
+        block: { cls: "s-block", label: "Bloqueado" },
+        late: { cls: "s-late", label: "Con tareas vencidas" },
+        work: { cls: "s-work", label: "Trabajando" },
+        idle: { cls: "s-idle", label: "Sin tareas" }
+      };
+      function stateOf(a) {
+        if (a.humano) return STATES.human;
+        if (a.bloqueadas > 0) return STATES.block;
+        if (a.vencidas > 0) return STATES.late;
+        if ((a.ahora && a.ahora.length) || a.abiertas > 0) return STATES.work;
+        return STATES.idle;
+      }
+      function el(tag, cls, text) {
+        var n = document.createElement(tag);
+        if (cls) n.className = cls;
+        if (text != null) n.textContent = text;
+        return n;
+      }
+
+      var byId = {}, children = {};
+      data.agentes.forEach(function (a) { byId[a.id] = a; });
+      data.agentes.forEach(function (a) {
+        var key = a.jefe && byId[a.jefe] ? a.jefe : "__root";
+        (children[key] = children[key] || []).push(a);
+      });
+
+      var pinned = null, current = null;
+
+      function fill(a) {
+        var st = stateOf(a);
+        pop.replaceChildren();
+        pop.append(el("h3", null, a.puesto));
+        var boss = a.jefe && byId[a.jefe] ? " · Reporta a " + byId[a.jefe].puesto : "";
+        pop.append(el("p", "meta", (a.area || "") + boss));
+        var pill = el("span", "pill " + st.cls);
+        pill.append(el("i", "dot"), document.createTextNode(st.label));
+        pop.append(pill);
+        if (a.proposito) {
+          pop.append(el("h4", null, a.humano ? "Tu papel" : "Qué hace"));
+          pop.append(el("p", null, a.proposito));
+        }
+        pop.append(el("h4", null, a.humano ? "Tus pendientes" : "En qué está"));
+        if (a.ahora && a.ahora.length) {
+          var ul = el("ul");
+          a.ahora.slice(0, 3).forEach(function (t) { ul.append(el("li", null, t)); });
+          pop.append(ul);
+        } else {
+          pop.append(el("p", "note", a.humano ? "Nada pendiente por ahora." : "Sin tareas en curso."));
+        }
+        if (a.bloqueos && a.bloqueos.length) {
+          pop.append(el("h4", null, "Bloqueos"));
+          var bl = el("ul", "block");
+          a.bloqueos.slice(0, 3).forEach(function (t) { bl.append(el("li", null, t)); });
+          pop.append(bl);
+        }
+        if (!a.humano) {
+          pop.append(el("p", "counts",
+            "Abiertas: " + (a.abiertas || 0) + " · Bloqueadas: " + (a.bloqueadas || 0) + " · Vencidas: " + (a.vencidas || 0)));
+        }
+      }
+
+      function place(btn) {
+        var r = btn.getBoundingClientRect();
+        var w = pop.offsetWidth, h = pop.offsetHeight;
+        var x = Math.max(8, Math.min(r.left + r.width / 2 - w / 2, window.innerWidth - w - 8));
+        var y = r.bottom + 8;
+        if (y + h > window.innerHeight - 8) y = Math.max(8, r.top - h - 8);
+        pop.style.left = x + "px";
+        pop.style.top = y + "px";
+      }
+
+      function show(btn, a) {
+        if (current && current !== btn) current.setAttribute("aria-expanded", "false");
+        current = btn;
+        fill(a);
+        pop.hidden = false;
+        place(btn);
+      }
+
+      function hide() {
+        if (current) current.setAttribute("aria-expanded", "false");
+        current = null;
+        pinned = null;
+        pop.hidden = true;
+      }
+
+      function node(a) {
+        var st = stateOf(a);
+        var btn = el("button", "node " + st.cls);
+        btn.type = "button";
+        btn.setAttribute("aria-expanded", "false");
+        btn.setAttribute("aria-describedby", "popover");
+        btn.setAttribute("aria-label", a.puesto + ", " + st.label);
+        var row = el("span", "row");
+        row.append(el("i", "dot"), el("strong", null, a.puesto));
+        btn.append(row);
+        if (a.area) btn.append(el("small", null, a.area));
+
+        btn.addEventListener("mouseenter", function () { if (!pinned) show(btn, a); });
+        btn.addEventListener("mouseleave", function () { if (!pinned) hide(); });
+        btn.addEventListener("focus", function () { if (!pinned) show(btn, a); });
+        btn.addEventListener("blur", function () { if (!pinned) hide(); });
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          if (pinned === btn) { hide(); return; }
+          show(btn, a);
+          pinned = btn;
+          btn.setAttribute("aria-expanded", "true");
+        });
+        return btn;
+      }
+
+      function branch(list, seen) {
+        var ul = el("ul");
+        list.forEach(function (a) {
+          if (seen[a.id]) return;
+          seen[a.id] = true;
+          var li = el("li");
+          li.append(node(a));
+          if (children[a.id]) li.append(branch(children[a.id], seen));
+          ul.append(li);
+        });
+        return ul;
+      }
+
+      org.append(branch(children.__root || [], {}));
+
+      document.addEventListener("click", function (e) {
+        if (pinned && !pop.contains(e.target)) hide();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") hide();
+      });
+      function reposition() { if (current && !pop.hidden) place(current); }
+      window.addEventListener("resize", reposition);
+      window.addEventListener("scroll", reposition, true);
+    })();
+  </script>
+</body>
+</html>

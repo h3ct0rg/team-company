@@ -4,96 +4,103 @@
 
 ## Español
 
-Este proyecto define una empresa operada por agentes de IA mediante archivos Markdown. Está pensado para funcionar con distintos modelos y harnesses de IA, sin depender de un proveedor concreto.
+Este proyecto define una empresa operada por agentes de IA mediante archivos Markdown. Ayuda a cualquier persona, sin experiencia técnica ni de negocios, a convertir una idea en una micro o pequeña empresa que genere ingresos. Funciona con cualquier modelo o herramienta de IA que pueda leer y crear archivos, sin depender de un proveedor concreto.
 
-El harness (la aplicación o agente que lee estos documentos) debe abrir `CEO.md` como instrucciones de entrada. Los archivos definen las reglas y el funcionamiento de la empresa; el harness aporta el modelo, la búsqueda web y las herramientas disponibles.
-
-## Documentos principales
-
-- `CEO.md`: punto de entrada y coordinación general.
-- `company/CHARTER.md`: reglas, autonomía, aprobaciones y límite de equipo.
-- `company/ORG_CHART.md`: puestos, reportes y registro del equipo.
-- `company/WORKSPACES.md`: registro de las carpetas de cada negocio.
-- `workflows/IDEA_TO_COMPANY.md`: pasos para convertir una idea en un negocio.
-- `protocols/COMMUNICATION.md`: comunicación y coordinación entre agentes.
-- `protocols/APPROVALS.md`: acciones que necesitan tu aprobación.
-- `templates/ROLE.md`: plantilla para definir cada puesto.
-- `templates/DELIVERABLE.html`: guía visual para páginas que los agentes entregan al humano.
+**Un repositorio = un negocio.** Para empezar otro negocio, usa una copia limpia de este repositorio.
 
 ## Cómo empezar
 
-1. Abre este proyecto en el harness de IA que prefieras y permite que lea y cree archivos dentro de esta carpeta.
-2. Pídele que cargue `CEO.md` como instrucciones internas. El CEO consultará los demás archivos según los necesite; no hace falta que te los muestre.
-3. Cuéntale tu idea en el chat. No hace falta que tengas un plan ni que sepas de negocios.
-4. El CEO investigará lo que pueda, te hará solo las preguntas que no pueda resolver y te guiará paso a paso. No necesitas leer los archivos internos para usar la empresa.
+1. Haz una copia limpia de este repositorio para tu negocio.
+2. Ábrela en la herramienta de IA que prefieras y permite que lea y cree archivos dentro de la carpeta.
+3. Escribe `@CEO.md` (o pídele que cargue `CEO.md` como instrucciones) y cuéntale tu idea. No hace falta que tengas un plan ni que sepas de negocios.
+4. El CEO investigará, te hará solo las preguntas imprescindibles, armará el equipo mínimo y te mostrará un panel con lo que te toca hacer.
 
 ### Ejemplo para la primera conversación
 
-> CEO, quiero empezar a vender poleras, pero no sé por dónde comenzar. Ayúdame a ver si puede funcionar y guíame paso a paso. Explícame las cosas de forma sencilla y pregúntame lo que necesites saber.
+> @CEO.md quiero empezar a vender poleras, pero no sé por dónde comenzar. Ayúdame a ver si puede funcionar y guíame paso a paso. Explícame las cosas de forma sencilla y pregúntame lo que necesites saber.
 
-Puedes empezar aunque todavía no sepas cuánto dinero invertir, a quién venderle o cuánto podrías ganar. El CEO te ayudará a resolverlo contigo.
+## Comandos
+
+Escríbelos en el chat, con o sin `/`:
+
+| Comando | Qué hace |
+|---|---|
+| `@CEO.md nuevo negocio: [idea]` | Arranca el negocio a partir de tu idea. |
+| `@CEO.md revisión semanal` | Revisa métricas y tareas, actualiza el panel y te cuenta cómo va todo. |
+| `@CEO.md mis pendientes` | Te muestra lo que te toca hacer, en lenguaje simple. |
+
+Si tu herramienta permite programar tareas, el CEO te ofrecerá ejecutar la revisión semanal automáticamente, siempre con tu aprobación.
+
+## Tu negocio
+
+Todo lo de tu negocio queda en la carpeta `negocio/`, que el CEO crea al comenzar:
+
+- `outputs/index.html`: **tu panel**. Ahí ves la etapa, lo que te toca hacer, los números, las entregas de cada área y el **organigrama de tu equipo**: al pasar el mouse o tocar un agente ves qué hace y en qué está.
+- `items/`: donde subes los materiales que te pidan (fotos, documentos, planillas). Los agentes nunca modifican lo que subes.
+- El resto (estado, memoria, tareas y métricas) lo mantienen los agentes. No necesitas leerlo.
 
 ## Cómo funciona
 
-Cada archivo de puesto define una responsabilidad. El harness puede ejecutarla con agentes separados o con un mismo modelo, siempre respetando la jerarquía y el registro del equipo. La empresa puede tener hasta **15 agentes en total, incluido el CEO**. Los agentes pueden contratar dentro de ese límite; para superarlo deben pedirte una excepción.
+- **Áreas y roles:** el catálogo `areas/` tiene 12 áreas (finanzas, ventas, marketing, atención al cliente, operaciones, compras, legal, producto, marca y diseño, tecnología, desarrollo de software y personas), cada una con su jefe y especialistas. El CEO activa solo lo que la etapa del negocio necesita, hasta **15 agentes en total, incluido el CEO**. Para superar ese límite se necesita tu aprobación.
+- **Subagentes:** si tu herramienta permite lanzar subagentes, cada rol trabaja como un agente independiente. Si no, el mismo modelo asume cada rol por turnos.
+- **Tareas:** cada rol tiene un archivo con sus tareas abiertas. Lo terminado se archiva por mes, y un resumen breve muestra el estado de todos. Así, conocer el estado de la empresa requiere leer muy poco, aunque el negocio lleve años operando.
+- **Permisos:** no hay nada conectado de antemano. Cada rol te pide permiso solo cuando lo necesita para gastar dinero, conectarse a un servicio (lectura y escritura por separado), publicar, instalar algo o programar tareas.
+- **Entregas:** cuando un área necesita que revises, decidas o hagas algo, te prepara una página HTML simple y te explica el siguiente paso.
 
-Los agentes pueden investigar y crear archivos dentro del proyecto. Cuando un resultado de su área requiera que tú lo revises o hagas algo, el responsable de esa área prepara su propia página HTML sencilla, te la comparte y te explica el siguiente paso. El CEO puede crear una vista general de la empresa, pero no es intermediario obligatorio para las entregas de los jefes.
+## Estructura del equipo
 
-Antes de gastar dinero, instalar software, conectarse a correo u otros servicios, o hacer cambios al sistema, deben explicarte la acción y esperar tu aprobación.
+- `CEO.md`: punto de entrada.
+- `company/`: constitución (`CHARTER.md`) y organigrama (`ORG_CHART.md`).
+- `areas/`: catálogo de áreas y roles, con reglas comunes en `areas/README.md`.
+- `comandos/`: comandos disponibles.
+- `protocols/`: aprobaciones, comunicación, y tareas y métricas.
+- `workflows/`: flujo de idea a empresa.
+- `templates/`: plantillas de estado, memoria, tareas, métricas, roles, entregas y panel.
+- `pruebas/`: escenarios para comprobar que el sistema funciona con cualquier herramienta.
 
-## Carpeta de tu negocio
-
-La carpeta del equipo contiene las reglas, puestos, plantillas y rutas internas de los agentes. Los datos y resultados de cada negocio se guardan aparte, en la carpeta que tú indiques. Si no indicas una, el CEO crea una carpeta en la raíz con el formato `company-{nombre-de-la-empresa}`, por ejemplo `company-nexo-inmobiliario`.
-
-Dentro de esa carpeta del negocio, el CEO crea `memory/` para decisiones e investigación, `items/` para los materiales que tú aportes y `outputs/` para los resultados y páginas HTML que los agentes te entreguen. No hace falta que prepares esas carpetas.
-
-El sistema está definido en Markdown; por sí solo no ejecuta agentes ni aplica permisos de forma técnica. El harness debe cargar y respetar estas reglas.
+El sistema está definido en Markdown; por sí solo no ejecuta agentes ni aplica permisos de forma técnica. La herramienta de IA debe cargar y respetar estas reglas.
 
 ---
 
 ## English
 
-This project describes an AI-run company using Markdown files. It is designed to work with different AI models and harnesses, without depending on a specific provider.
+This project describes an AI-run company using Markdown files. It helps anyone, with no technical or business experience, turn an idea into a micro or small business that generates revenue. It works with any AI model or tool that can read and create files, without depending on a specific provider.
 
-The harness (the app or agent reading these documents) should load `CEO.md` as its starting instructions. These files define the company’s rules and processes; the harness provides the model, web search, and available tools.
-
-## Main documents
-
-- `CEO.md`: starting point and company-wide coordination.
-- `company/CHARTER.md`: operating rules, autonomy, approvals, and team limit.
-- `company/ORG_CHART.md`: roles, reporting lines, and team roster.
-- `company/WORKSPACES.md`: registry of each business folder.
-- `workflows/IDEA_TO_COMPANY.md`: process for turning an idea into a business.
-- `protocols/COMMUNICATION.md`: communication and coordination between agents.
-- `protocols/APPROVALS.md`: actions that need your approval.
-- `templates/ROLE.md`: template for defining each role.
-- `templates/DELIVERABLE.html`: visual guide for pages agents share with you.
+**One repository = one business.** To start another business, use a clean copy of this repository.
 
 ## Getting started
 
-1. Open this project in the AI harness of your choice and allow it to read and create files in this folder.
-2. Ask it to load `CEO.md` as internal instructions. The CEO will consult other files as needed; it does not need to show them to you.
-3. Tell it your idea in chat. You do not need a business plan or business experience.
-4. The CEO will research what it can, ask only questions it cannot resolve, and guide you step by step. You do not need to read the internal files to use the company.
+1. Make a clean copy of this repository for your business.
+2. Open it in the AI tool of your choice and allow it to read and create files in the folder.
+3. Type `@CEO.md` (or ask it to load `CEO.md` as instructions) and describe your idea. You do not need a plan or business experience.
+4. The CEO will research, ask only essential questions, set up the minimum team, and show you a dashboard with your next steps.
 
-### First conversation example
+## Commands
 
-> CEO, I want to start selling T-shirts, but I don't know where to begin. Help me figure out whether it could work and guide me step by step. Explain things simply and ask me whatever you need to know.
+Type them in chat, with or without `/`:
 
-You can start even if you don't yet know how much money to invest, who your customers might be, or how much you could earn. The CEO will help you work it out.
+| Command | What it does |
+|---|---|
+| `@CEO.md nuevo negocio: [idea]` | Starts the business from your idea. |
+| `@CEO.md revisión semanal` | Reviews metrics and tasks, updates the dashboard, and reports progress. |
+| `@CEO.md mis pendientes` | Shows what you need to do, in plain language. |
+
+If your tool supports scheduled tasks, the CEO will offer to run the weekly review automatically, always with your approval.
+
+## Your business
+
+Everything about your business lives in the `negocio/` folder, which the CEO creates at the start:
+
+- `outputs/index.html`: **your dashboard** with the stage, your to-dos, key numbers, each area's deliverables, and your **team's org chart**: hover over or tap an agent to see what it does and what it is working on.
+- `items/`: where you upload requested materials. Agents never modify what you upload.
+- Everything else (state, memory, tasks, metrics) is maintained by the agents.
 
 ## How it works
 
-Each role file defines a responsibility. The harness can run it using separate agents or a single model, while following the reporting structure and team roster. The company can have up to **15 agents total, including the CEO**. Managers may hire within that limit; exceeding it requires your approval.
+- **Areas and roles:** the `areas/` catalog has 12 areas, each with a lead and specialists. The CEO activates only what the current stage needs, up to **15 agents total, including the CEO**. Exceeding that requires your approval.
+- **Subagents:** if your tool supports subagents, each role runs as its own agent; otherwise the same model takes on each role in turn.
+- **Tasks:** each role has a file with its open tasks; finished tasks are archived monthly, and a short summary shows everyone's status. Reading the company's status stays cheap as the business grows.
+- **Permissions:** nothing is pre-connected. Each role asks only when needed to spend money, connect a service (read and write approved separately), publish, install, or schedule tasks.
+- **Deliverables:** when an area needs your review, decision, or action, it prepares a simple HTML page and explains the next step.
 
-Agents may research and create files inside the project. When a result from their area needs your review or action, the person responsible for that area creates and shares their own simple HTML page and explains the next step. The CEO may create a company-wide overview, but is not a required intermediary for managers' deliverables.
-
-Before spending money, installing software, connecting to email or other services, or changing the system, agents must explain the action and wait for your approval.
-
-## Your business folder
-
-The team folder contains agent rules, roles, templates, and internal routing. Business data and deliverables are stored separately, in a folder you specify. If you do not specify one, the CEO creates a folder at the project root named `company-{business-name}`, for example `company-nexo-inmobiliario`.
-
-Inside the business folder, the CEO creates `memory/` for decisions and research, `items/` for materials you provide, and `outputs/` for deliverables and HTML pages shared by agents. You do not need to create these folders yourself.
-
-The system is defined in Markdown; by itself, it does not run agents or technically enforce permissions. The harness must load and follow these rules.
+The system is defined in Markdown; by itself, it does not run agents or technically enforce permissions. The AI tool must load and follow these rules.

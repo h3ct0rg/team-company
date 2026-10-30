@@ -1,24 +1,24 @@
 # Flujo: de idea a empresa
 
+Este flujo se inicia con `comandos/nuevo-negocio.md`, que crea antes la carpeta `negocio/`. Todos los datos, materiales y entregables del negocio se guardan allí, nunca en la carpeta del equipo.
+
 ## 1. Comprensión inicial
 
-Extrae de la conversación lo que se sabe: idea, cliente, problema, solución, experiencia disponible, país/región, moneda, utilidad neta deseada, fecha objetivo e inversión inicial. No conviertas campos desconocidos en datos inventados. Revisa el espacio de trabajo registrado en `company/WORKSPACES.md`; consulta ahí `STATE.md` y la memoria del negocio.
-
-Antes de guardar información del negocio, resuelve su espacio de trabajo según `company/WORKSPACES.md`. Usa la carpeta que indique el humano o, si no indicó una, crea en la raíz `company-{nombre-de-la-empresa}`. Inicializa `memory/`, `items/`, `outputs/`, `STATE.md` y `MEMORY_INDEX.md` dentro de esa carpeta. Ningún dato, material o entregable específico del negocio debe guardarse en la estructura del equipo.
+Extrae de la conversación lo que se sabe: idea, cliente, problema, solución, experiencia disponible, país/región, moneda, utilidad neta deseada, fecha objetivo e inversión inicial. No conviertas campos desconocidos en datos inventados. Regístralo en `negocio/STATE.md`.
 
 No exijas que la persona complete un formulario para empezar. Usa primero el contexto, investiga lo que puedas y avanza con supuestos reversibles claramente identificados. Habla en lenguaje simple y explica cualquier término de negocio.
 
 ## 2. Investigación
 
-Usa fuentes públicas disponibles para entender el mercado, competidores, precios, alternativas, regulación relevante y señales de demanda. Registra URL, fecha, afirmación respaldada y limitaciones. Distingue competidores directos, sustitutos y alternativas actuales del cliente.
+Usa fuentes públicas disponibles para entender el mercado, competidores, precios, alternativas, regulación relevante y señales de demanda. Registra en `negocio/memory/RESEARCH.md` la URL, la fecha, la afirmación respaldada y las limitaciones. Distingue competidores directos, sustitutos y alternativas actuales del cliente.
 
 ## 3. Preguntas al humano
 
-Después de investigar, pregunta solo las dudas que no puedas resolver y que cambien una decisión importante, o que requieran información/acción humana. Agrúpalas en un solo mensaje sencillo; separa lo imprescindible de lo que puede esperar. No preguntes por preferencia si puedes presentar una recomendación inicial fácil de corregir. Para materiales, especifica carpeta, formato y propósito. Espera respuesta antes de las decisiones dependientes; avanza el trabajo independiente.
+Después de investigar, pregunta solo las dudas que no puedas resolver y que cambien una decisión importante, o que requieran información o acción humana. Agrúpalas en un solo mensaje sencillo; separa lo imprescindible de lo que puede esperar. No preguntes por preferencia si puedes presentar una recomendación inicial fácil de corregir. Para materiales, especifica carpeta, formato y propósito, y regístralos en `negocio/tareas/HUMANO.md`. Espera respuesta antes de las decisiones dependientes; avanza el trabajo independiente.
 
 ## 4. Evaluación de oportunidad
 
-Prepara una síntesis de cliente, problema, propuesta de valor, competencia, diferenciación posible, canales, riesgos, supuestos y evidencia. Evalúa si la meta económica y fecha parecen plausibles. Cuando no haya datos, presenta escenarios o rangos claramente identificados como estimaciones.
+Prepara una síntesis de cliente, problema, propuesta de valor, competencia, diferenciación posible, canales, riesgos, supuestos y evidencia. Evalúa si la meta económica y la fecha parecen plausibles. Cuando no haya datos, presenta escenarios o rangos claramente identificados como estimaciones.
 
 ## 5. Identidad y estrategia
 
@@ -26,22 +26,23 @@ Propón misión y visión vinculadas al cliente y al valor entregado. Define obj
 
 ## 6. Diseño del equipo
 
-El CEO propone el equipo mínimo según trabajo real y próximos hitos, no por simetría organizacional. Cada contratación incluye:
+El CEO activa el equipo mínimo desde el catálogo `areas/README.md` según el trabajo real de la etapa siguiente, no por simetría organizacional. Cada activación incluye:
 
 - Resultado que el rol debe producir.
 - Carga o responsabilidad que el equipo actual no cubre.
-- Por qué no basta reasignar trabajo, usar una herramienta disponible o reducir alcance.
-- Jefe directo, entregables, métricas y dependencias.
-- Conteo global antes y después de contratar.
+- Por qué no basta reasignar trabajo o reducir alcance.
+- Conteo global antes y después de activarlo.
 
-El jefe funcional puede contratar para su equipo dentro del máximo global de 15. Actualiza primero el archivo de rol y `company/ORG_CHART.md`. Si se excedería el límite, el CEO pide una excepción justificada al humano y espera.
+El jefe de un área puede activar especialistas de su área dentro del máximo global de 15. Registra primero el rol en `company/ORG_CHART.md` y crea su archivo de tareas. Si se excedería el límite, el CEO pide una excepción justificada al humano y espera.
 
 ## 7. Presentación y decisión
 
-Entrega al humano una explicación breve y sencilla en el chat. Si el resultado es un plan o requiere revisión, decisión o pasos humanos, el agente responsable crea su propia página HTML visual en `[espacio-de-trabajo]/outputs/` y la enlaza en su mensaje. Incluye oportunidad, evidencia, competencia, misión/visión, plan inicial, meta económica y supuestos, equipo propuesto, riesgos, preguntas pendientes y acciones que requieren aprobación. No presentes una hipótesis como resultado garantizado ni obligues a leer muchos documentos internos.
+Entrega al humano una explicación breve y sencilla en el chat y el enlace al panel `negocio/outputs/index.html`. Si el resultado es un plan o requiere revisión, decisión o pasos humanos, el agente responsable crea su propia página HTML en `negocio/outputs/` y el panel la enlaza. Incluye oportunidad, evidencia, competencia, misión/visión, plan inicial, meta económica y supuestos, equipo propuesto, riesgos, preguntas pendientes y acciones que requieren aprobación. No presentes una hipótesis como resultado garantizado ni obligues a leer documentos internos.
 
 ## 8. Ejecución y revisión
 
-Ejecuta tareas autorizadas, informa avances por la jerarquía y actualiza `[espacio-de-trabajo]/STATE.md`, la memoria y los entregables del negocio. El organigrama y el registro de agentes se mantienen en `company/ORG_CHART.md`. Revisa métricas frente a hitos; si la evidencia contradice el plan, informa y propone una corrección.
+Ejecuta el plan mediante tareas según `protocols/TASKS.md`: cada rol trabaja desde su archivo de tareas y archiva lo terminado. Los resultados se registran en `negocio/METRICS.csv`.
 
-Cada jefe o responsable crea y entrega el HTML de su propio trabajo si el humano debe usarlo. El CEO puede enlazar estas páginas o mantener una vista global cuando ayude a entender cómo avanza la empresa.
+Una vez por semana, ejecuta `comandos/revision-semanal.md`: métricas, tareas, equipo, etapa y panel. Si la evidencia contradice el plan, informa y propone una corrección. Cuando se cumple el objetivo de una etapa, propón avanzar a la siguiente y ajusta el equipo.
+
+Cada jefe o responsable crea y entrega el HTML de su propio trabajo si el humano debe usarlo. El CEO lo enlaza desde el panel.

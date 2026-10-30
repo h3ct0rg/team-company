@@ -1,36 +1,48 @@
 # Organigrama y registro de equipo
 
-Este archivo es la fuente de verdad del equipo. Actualízalo antes de asignar tareas a un puesto nuevo y al dar de baja un agente. **Límite: 15 agentes activos o disponibles, contando al CEO.**
+Este archivo es la fuente de verdad del equipo. Actualízalo antes de asignar tareas a un rol nuevo y al dar de baja un agente. **Límite: 15 agentes activos o disponibles, contando al CEO.** Cada jefe de área y cada especialista activo cuenta como un agente.
+
+Los roles disponibles están en el catálogo `areas/README.md`. Un rol del catálogo no cuenta hasta que aparece aquí como activo.
 
 ## Conteo actual
 
 - Total activo o disponible: **1 / 15**
 - Puestos ocupados: CEO
-- Puestos vacantes aprobados: ninguno
-- Última revisión: 2026-10-10
+- Última revisión: 2026-10-30
 
 ## Estructura
 
 ```text
 Humano (fundador / autoridad de aprobación)
-└── CEO (coordina la empresa; reporta al humano)
+└── CEO (coordina la empresa; cubre la jefatura de las áreas sin jefe activo)
 ```
 
-Cada rol debe tener su archivo Markdown y una entrada con jefe directo. No declares un rol ocupado si no tiene un agente asignado o no se ha creado su definición. Los roles vacantes no cuentan como agentes y no pueden recibir tareas.
+Al activar roles, refleja aquí la estructura. Ejemplo:
+
+```text
+Humano
+└── CEO
+    ├── Jefe de Marketing
+    │   └── Social media manager
+    └── Jefe de Finanzas
+```
+
+Cada rol debe tener su archivo en `areas/` y una entrada con jefe directo. Un especialista sin jefe de área activo reporta al CEO. No declares un rol ocupado si no está registrado aquí.
 
 ## Registro
 
-| ID | Puesto | Archivo | Jefe directo | Estado | Fecha de alta | Justificación / objetivo |
-|---|---|---|---|---|---|---|
-| A-001 | CEO | `CEO.md` | Humano | Activo | 2026-10-10 | Coordinar la empresa y convertir ideas en planes ejecutables. |
+| ID | Puesto | Área | Archivo de rol | Tareas | Jefe directo | Estado | Fecha de alta | Justificación / objetivo |
+|---|---|---|---|---|---|---|---|---|
+| A-001 | CEO | Dirección | `CEO.md` | `negocio/tareas/ceo.md` | Humano | Activo | 2026-10-10 | Coordinar la empresa y convertir ideas en planes ejecutables. |
 
 ## Procedimiento de alta
 
-1. El jefe del área documenta la necesidad y compara opciones en el registro de decisiones.
-2. Verifica que el puesto tenga misión, responsabilidades, jefe directo y límites definidos en un archivo basado en `templates/ROLE.md`.
-3. Cuenta los agentes activos y disponibles, incluido el CEO. Si el resultado supera 15, no activa el puesto; el CEO puede elevar una solicitud de excepción al humano.
-4. Añade el puesto al registro y actualiza el conteo antes de delegarle trabajo.
+1. El jefe del área (o el CEO) documenta la necesidad en `negocio/memory/DECISIONS.md` y descarta alternativas: reasignar, priorizar o reducir alcance.
+2. Elige el rol del catálogo. Si no existe, lo crea desde `templates/ROLE.md`.
+3. Cuenta los agentes activos y disponibles, incluido el CEO. Si el resultado supera 15, no activa el rol; el CEO puede elevar una solicitud de excepción al humano.
+4. Añade el rol al registro, actualiza el conteo y la estructura, y crea su archivo de tareas antes de delegarle trabajo.
+5. Agrega el rol al organigrama del panel (`negocio/outputs/equipo.js`), con su propósito en lenguaje simple.
 
 ## Procedimiento de baja
 
-El jefe informa al CEO el motivo, tareas abiertas y destino de la memoria del puesto. Marca el estado como “Baja” y actualiza el conteo. Una baja libera un puesto; una pausa o inactividad temporal no.
+El jefe cierra o reasigna las tareas abiertas del rol, archiva su archivo de tareas y registra el motivo en `negocio/memory/DECISIONS.md`. Marca el estado como «Baja», actualiza el conteo y quita el rol de `negocio/outputs/equipo.js`. Una baja libera un puesto; una pausa o inactividad temporal no.

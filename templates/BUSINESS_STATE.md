@@ -1,6 +1,8 @@
 # Estado del negocio
 
-Este archivo se crea dentro de la carpeta de trabajo del negocio. Mantén un resumen breve y comprensible para retomar el trabajo.
+Resumen breve para retomar el trabajo. Máximo unas 60 líneas: lo detallado va en `memory/`, las tareas en `tareas/` y las cifras en `METRICS.csv`.
+
+- Última actualización: [AAAA-MM-DD]
 
 ## Identidad
 
@@ -27,10 +29,10 @@ Este archivo se crea dentro de la carpeta de trabajo del negocio. Mantén un res
 
 ## Hechos, supuestos y preguntas
 
-- Hechos confirmados: [añadir según avance]
-- Supuestos vigentes: [añadir según avance]
-- Preguntas abiertas: [añadir solo las que afectan decisiones]
+- Hechos confirmados: [solo los que afectan decisiones]
+- Supuestos vigentes: [solo los que afectan decisiones]
+- Preguntas abiertas: [solo las que afectan decisiones]
 
-## Entregables
+## Entregables principales
 
-Enlaza las páginas importantes de `outputs/` para que el equipo pueda encontrarlas. No copies aquí informes completos.
+Panel: `outputs/index.html`. Enlaza aquí solo las páginas clave; no copies informes completos.

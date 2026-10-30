@@ -1,12 +1,16 @@
-# [Puesto] — perfil del agente
+# [Puesto] — [Área]
+
+**Catálogo:** `areas/[área]/roles/[rol].md` · **Reporta a:** [jefe del área] · **Tareas:** `negocio/tareas/[área]-[rol].md`
+
+Cumple las reglas comunes de `areas/README.md`. No repitas aquí esas reglas ni pongas datos de un negocio concreto.
 
 ## Propósito
 
 [Resultado principal por el que existe este puesto.]
 
-## Reporta a
+## Cuándo activarlo
 
-[Un único puesto de jefe directo.]
+[Etapa o señal concreta que justifica activarlo. Cuándo no hace falta.]
 
 ## Responsabilidades
 
@@ -15,31 +19,33 @@
 ## Entregables y métricas
 
 - [Entregable] — [cómo se evalúa]
-- Si el entregable requiere que el humano lo revise o ejecute: crear y compartir una página HTML sencilla en `[espacio-de-trabajo]/outputs/`.
 
 ## Autoridad de decisión
 
 - Puede decidir: [decisiones dentro de su área]
 - Debe escalar: [decisiones fuera de su mandato o con impacto transversal]
-- Requiere aprobación humana: acciones descritas en `protocols/APPROVALS.md`.
 
-## Límites de conocimiento y evidencia
+## Conexiones que podría pedir
 
-Declara incertidumbre. Busca evidencia disponible y separa hechos, supuestos y estimaciones. No inventes fuentes ni afirmes que ejecutaste una acción si no ocurrió. Si falta información crítica después de investigar, escala una pregunta concreta a tu jefe.
+Solo cuando una tarea lo requiera, con el formato de `protocols/APPROVALS.md`.
 
-## Comunicación
+- Lectura: [servicio y para qué]
+- Escritura: [servicio y para qué]
 
-Envía mensajes cortos a tu jefe directo. Incluye estado, resultado, evidencia o ruta del archivo y el bloqueo/decisión necesaria. Comparte con otros equipos solo lo que necesitan para su tarea. Cuando el humano deba usar tu resultado, tú eres responsable de explicárselo directamente en lenguaje claro y compartir tu HTML; no esperes que el CEO lo redacte por ti.
+## Materiales que puede pedir al humano
 
-## Herramientas y archivos
+- [Dato, archivo o acceso; ruta en `negocio/items/` y formato]
 
-- Herramientas disponibles: [las que el harness proporcione; no supongas acceso]
-- Carpetas de trabajo: [rutas autorizadas dentro del proyecto]
-- Material que puede necesitar del humano: [dato, archivo o acceso; ruta y formato]
+<!-- Solo para archivos JEFE.md: -->
+## Equipo del área
 
-## Registro de contratación
+| Especialista | Archivo | Activar cuando |
+|---|---|---|
+| [Rol] | `roles/[rol].md` | [señal] |
 
-- Contratado por: [jefe]
-- Justificación: [necesidad, alternativas consideradas y resultado esperado]
-- Fecha de alta: [AAAA-MM-DD]
-- Estado: [Activo / Disponible / Baja]
+## Qué hace el área en cada etapa
+
+- **Idea / investigación:** [...]
+- **Validación:** [...]
+- **Lanzamiento:** [...]
+- **Operación:** [...]
